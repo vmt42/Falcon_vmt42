@@ -3,7 +3,7 @@
 
 #include <string>
 #include <GLES2/gl2.h>
-#include "SDL2/SDL_opengl.h"
+//#include "SDL2/SDL_opengl.h"
 namespace Falcon {
     class GLSLProgram {
     public:

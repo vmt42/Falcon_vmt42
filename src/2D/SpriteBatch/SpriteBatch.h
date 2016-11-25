@@ -2,11 +2,11 @@
 #define FALCONLATINUM_SPRITEBATCH_H
 
 #include <SDL2/SDL.h>
-#include "SDL2/SDL_opengl.h"
+//#include "SDL2/SDL_opengl.h"
 #include <glm/glm.hpp>
 #include <vector>
 #include "../Vertex.h"
-#include <GL/glew.h>
+#include <GLES2/gl2.h>
 
 enum class GlyphSortType
 {
