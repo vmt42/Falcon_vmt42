@@ -1,12 +1,12 @@
-#version 130
+#version 120
 
-in vec2 vertexPosition;
-in vec4 vertexColor;
-in vec2 vertexUV;
+attribute vec2 vertexPosition;
+attribute vec4 vertexColor;
+attribute vec2 vertexUV;
 
-out vec4 fragmentColor;
-out vec2 fragmentPosition;
-out vec2 fragmentUV;
+varying vec4 fragmentColor;
+varying vec2 fragmentPosition;
+varying vec2 fragmentUV;
 
 uniform mat4 P;
 

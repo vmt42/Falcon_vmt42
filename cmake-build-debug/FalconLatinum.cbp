@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FalconLatinum"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FalconLatinum">
+				<Option output="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/FalconLatinum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include}"/>
+					<Add directory="/home/andrewshipilo/Projects/FalconLatinum/source/headers"/>
+					<Add directory="/home/andrewshipilo/Projects/FalconLatinum/src/Shaders"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalconLatinum"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FalconLatinum/fast">
+				<Option output="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/FalconLatinum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/usr/include}"/>
+					<Add directory="/home/andrewshipilo/Projects/FalconLatinum/source/headers"/>
+					<Add directory="/home/andrewshipilo/Projects/FalconLatinum/src/Shaders"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 FalconLatinum/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/Camera/Camera2D.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/Camera/Camera2D.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/GLTexture.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/ImageLoader/ImageLoader.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/ImageLoader/ImageLoader.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/Sprite.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/Sprite.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/SpriteBatch/SpriteBatch.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/SpriteBatch/SpriteBatch.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/Vertex.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/picoPNG.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/2D/picoPNG.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Errors/Errors.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Errors/Errors.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Falcon.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Falcon.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/main.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/IOManager.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/IOManager.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/InputManager.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/InputManager.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/TextureCache.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/TextureCache.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/States/StateManager.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/States/StateManager.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Timing/Timing.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Timing/Timing.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Window/Window.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Window/Window.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/cmake/FindGLM.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
