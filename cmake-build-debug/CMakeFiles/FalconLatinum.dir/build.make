@@ -57,52 +57,52 @@ include CMakeFiles/FalconLatinum.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/FalconLatinum.dir/flags.make
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o: ../src/Init/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.cpp
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.cpp
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.cpp > CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.i
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.i
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.cpp -o CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.s
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.s
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.requires:
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.requires:
 
-.PHONY : CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.requires
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.requires
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.requires
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.provides.build
-.PHONY : CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.provides
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.provides
 
-CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o
 
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o: ../src/Init/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Init/main.cpp
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/main.cpp
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Init/main.cpp > CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.i
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/main.cpp > CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.i
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Init/main.cpp -o CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.s
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/main.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.s
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.requires:
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.requires
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.requires
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.provides.build
-.PHONY : CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.provides
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.provides
 
-CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o
 
 
 CMakeFiles/FalconLatinum.dir/src/States/StateManager.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
@@ -153,28 +153,28 @@ CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o.provides: CMakeFiles/FalconLati
 CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o
 
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o: ../src/GLSL/GLSLProgram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.cpp
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o: ../src/GLSL/ShaderProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/ShaderProgram.cpp
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.cpp > CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.i
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/ShaderProgram.cpp > CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.i
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.cpp -o CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.s
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/GLSL/ShaderProgram.cpp -o CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.s
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.requires:
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.requires:
 
-.PHONY : CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.requires
+.PHONY : CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.requires
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.requires
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.provides.build
-.PHONY : CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.provides
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.provides
 
-CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o
+CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o
 
 
 CMakeFiles/FalconLatinum.dir/src/Errors/Errors.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
@@ -465,13 +465,253 @@ CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o.provides: CMakeFiles/Falcon
 CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o
 
 
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o: ../src/Object/Projectile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Object/Projectile.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Object/Projectile.cpp > CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Object/Projectile.cpp -o CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o: ../src/Game/Actor/Actor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/Game/Actor/Human.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Actor/Enemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o: ../src/Game/Level/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Actor/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Weapon/Bow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o: ../src/Game/Weapon/Weapon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/Game/Weapon/RangeWeapon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o
+
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: CMakeFiles/FalconLatinum.dir/flags.make
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Weapon/Bullet.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o -c /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.cpp
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.cpp > CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.i
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.cpp -o CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.s
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.requires:
+
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.requires
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.provides: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.requires
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.provides.build
+.PHONY : CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.provides
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.provides.build: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o
+
+
 # Object files for target FalconLatinum
 FalconLatinum_OBJECTS = \
-"CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o" \
-"CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/States/StateManager.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o" \
-"CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/Errors/Errors.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/InputOutput/IOManager.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/2D/picoPNG.cpp.o" \
@@ -483,16 +723,26 @@ FalconLatinum_OBJECTS = \
 "CMakeFiles/FalconLatinum.dir/src/2D/Camera/Camera2D.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/2D/SpriteBatch/SpriteBatch.cpp.o" \
 "CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.o" \
-"CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o"
+"CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o" \
+"CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o"
 
 # External object files for target FalconLatinum
 FalconLatinum_EXTERNAL_OBJECTS =
 
-FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o
-FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/States/StateManager.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o
-FalconLatinum: CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Errors/Errors.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/InputOutput/IOManager.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/2D/picoPNG.cpp.o
@@ -505,6 +755,16 @@ FalconLatinum: CMakeFiles/FalconLatinum.dir/src/2D/Camera/Camera2D.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/2D/SpriteBatch/SpriteBatch.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o
+FalconLatinum: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o
 FalconLatinum: CMakeFiles/FalconLatinum.dir/build.make
 FalconLatinum: /usr/lib/x86_64-linux-gnu/libSDL2main.a
 FalconLatinum: /usr/lib/x86_64-linux-gnu/libSDL2.so
@@ -512,7 +772,7 @@ FalconLatinum: /usr/lib/x86_64-linux-gnu/libGLU.so
 FalconLatinum: /usr/lib/x86_64-linux-gnu/libGL.so
 FalconLatinum: /usr/lib/x86_64-linux-gnu/libGLEW.so
 FalconLatinum: CMakeFiles/FalconLatinum.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable FalconLatinum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/andrewshipilo/Projects/FalconLatinum/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable FalconLatinum"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FalconLatinum.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -520,11 +780,11 @@ CMakeFiles/FalconLatinum.dir/build: FalconLatinum
 
 .PHONY : CMakeFiles/FalconLatinum.dir/build
 
-CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o.requires
-CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/States/StateManager.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o.requires
-CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Errors/Errors.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/InputOutput/IOManager.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/2D/picoPNG.cpp.o.requires
@@ -537,6 +797,16 @@ CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/2D/Camer
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/2D/SpriteBatch/SpriteBatch.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.o.requires
 CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o.requires
+CMakeFiles/FalconLatinum.dir/requires: CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o.requires
 
 .PHONY : CMakeFiles/FalconLatinum.dir/requires
 

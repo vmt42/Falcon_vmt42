@@ -4,12 +4,14 @@
 #include <string>
 #include <GLES2/gl2.h>
 //#include "SDL2/SDL_opengl.h"
-namespace Falcon {
-    class GLSLProgram {
+namespace Falcon
+{
+    class ShaderProgram
+    {
     public:
-        GLSLProgram() : m_fragShaderID(0), m_vertShaderID(0), m_programID(0), m_numAttributes(0) {};
+        ShaderProgram() : m_fragShaderID(0), m_vertShaderID(0), m_programID(0), m_numAttributes(0) {};
 
-        ~GLSLProgram() {};
+        ~ShaderProgram() {};
 
         void compileShaders(const std::string &vertShaderPath, const std::string &fragShaderPath);
 

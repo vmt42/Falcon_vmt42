@@ -285,32 +285,329 @@ src/Errors/Errors.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Errors/Errors.cpp.s
 .PHONY : src/Errors/Errors.cpp.s
 
-src/GLSL/GLSLProgram.o: src/GLSL/GLSLProgram.cpp.o
+src/GLSL/ShaderProgram.o: src/GLSL/ShaderProgram.cpp.o
 
-.PHONY : src/GLSL/GLSLProgram.o
+.PHONY : src/GLSL/ShaderProgram.o
 
 # target to build an object file
-src/GLSL/GLSLProgram.cpp.o:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o
-.PHONY : src/GLSL/GLSLProgram.cpp.o
+src/GLSL/ShaderProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.o
+.PHONY : src/GLSL/ShaderProgram.cpp.o
 
-src/GLSL/GLSLProgram.i: src/GLSL/GLSLProgram.cpp.i
+src/GLSL/ShaderProgram.i: src/GLSL/ShaderProgram.cpp.i
 
-.PHONY : src/GLSL/GLSLProgram.i
+.PHONY : src/GLSL/ShaderProgram.i
 
 # target to preprocess a source file
-src/GLSL/GLSLProgram.cpp.i:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.i
-.PHONY : src/GLSL/GLSLProgram.cpp.i
+src/GLSL/ShaderProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.i
+.PHONY : src/GLSL/ShaderProgram.cpp.i
 
-src/GLSL/GLSLProgram.s: src/GLSL/GLSLProgram.cpp.s
+src/GLSL/ShaderProgram.s: src/GLSL/ShaderProgram.cpp.s
 
-.PHONY : src/GLSL/GLSLProgram.s
+.PHONY : src/GLSL/ShaderProgram.s
 
 # target to generate assembly for a file
-src/GLSL/GLSLProgram.cpp.s:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.s
-.PHONY : src/GLSL/GLSLProgram.cpp.s
+src/GLSL/ShaderProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/GLSL/ShaderProgram.cpp.s
+.PHONY : src/GLSL/ShaderProgram.cpp.s
+
+src/Game/Actor/Actor.o: src/Game/Actor/Actor.cpp.o
+
+.PHONY : src/Game/Actor/Actor.o
+
+# target to build an object file
+src/Game/Actor/Actor.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o
+.PHONY : src/Game/Actor/Actor.cpp.o
+
+src/Game/Actor/Actor.i: src/Game/Actor/Actor.cpp.i
+
+.PHONY : src/Game/Actor/Actor.i
+
+# target to preprocess a source file
+src/Game/Actor/Actor.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.i
+.PHONY : src/Game/Actor/Actor.cpp.i
+
+src/Game/Actor/Actor.s: src/Game/Actor/Actor.cpp.s
+
+.PHONY : src/Game/Actor/Actor.s
+
+# target to generate assembly for a file
+src/Game/Actor/Actor.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.s
+.PHONY : src/Game/Actor/Actor.cpp.s
+
+src/Game/Actor/Enemy.o: src/Game/Actor/Enemy.cpp.o
+
+.PHONY : src/Game/Actor/Enemy.o
+
+# target to build an object file
+src/Game/Actor/Enemy.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o
+.PHONY : src/Game/Actor/Enemy.cpp.o
+
+src/Game/Actor/Enemy.i: src/Game/Actor/Enemy.cpp.i
+
+.PHONY : src/Game/Actor/Enemy.i
+
+# target to preprocess a source file
+src/Game/Actor/Enemy.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.i
+.PHONY : src/Game/Actor/Enemy.cpp.i
+
+src/Game/Actor/Enemy.s: src/Game/Actor/Enemy.cpp.s
+
+.PHONY : src/Game/Actor/Enemy.s
+
+# target to generate assembly for a file
+src/Game/Actor/Enemy.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.s
+.PHONY : src/Game/Actor/Enemy.cpp.s
+
+src/Game/Actor/Human.o: src/Game/Actor/Human.cpp.o
+
+.PHONY : src/Game/Actor/Human.o
+
+# target to build an object file
+src/Game/Actor/Human.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o
+.PHONY : src/Game/Actor/Human.cpp.o
+
+src/Game/Actor/Human.i: src/Game/Actor/Human.cpp.i
+
+.PHONY : src/Game/Actor/Human.i
+
+# target to preprocess a source file
+src/Game/Actor/Human.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.i
+.PHONY : src/Game/Actor/Human.cpp.i
+
+src/Game/Actor/Human.s: src/Game/Actor/Human.cpp.s
+
+.PHONY : src/Game/Actor/Human.s
+
+# target to generate assembly for a file
+src/Game/Actor/Human.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.s
+.PHONY : src/Game/Actor/Human.cpp.s
+
+src/Game/Actor/Player.o: src/Game/Actor/Player.cpp.o
+
+.PHONY : src/Game/Actor/Player.o
+
+# target to build an object file
+src/Game/Actor/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o
+.PHONY : src/Game/Actor/Player.cpp.o
+
+src/Game/Actor/Player.i: src/Game/Actor/Player.cpp.i
+
+.PHONY : src/Game/Actor/Player.i
+
+# target to preprocess a source file
+src/Game/Actor/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.i
+.PHONY : src/Game/Actor/Player.cpp.i
+
+src/Game/Actor/Player.s: src/Game/Actor/Player.cpp.s
+
+.PHONY : src/Game/Actor/Player.s
+
+# target to generate assembly for a file
+src/Game/Actor/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.s
+.PHONY : src/Game/Actor/Player.cpp.s
+
+src/Game/Game.o: src/Game/Game.cpp.o
+
+.PHONY : src/Game/Game.o
+
+# target to build an object file
+src/Game/Game.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o
+.PHONY : src/Game/Game.cpp.o
+
+src/Game/Game.i: src/Game/Game.cpp.i
+
+.PHONY : src/Game/Game.i
+
+# target to preprocess a source file
+src/Game/Game.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.i
+.PHONY : src/Game/Game.cpp.i
+
+src/Game/Game.s: src/Game/Game.cpp.s
+
+.PHONY : src/Game/Game.s
+
+# target to generate assembly for a file
+src/Game/Game.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.s
+.PHONY : src/Game/Game.cpp.s
+
+src/Game/Level/Level.o: src/Game/Level/Level.cpp.o
+
+.PHONY : src/Game/Level/Level.o
+
+# target to build an object file
+src/Game/Level/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o
+.PHONY : src/Game/Level/Level.cpp.o
+
+src/Game/Level/Level.i: src/Game/Level/Level.cpp.i
+
+.PHONY : src/Game/Level/Level.i
+
+# target to preprocess a source file
+src/Game/Level/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.i
+.PHONY : src/Game/Level/Level.cpp.i
+
+src/Game/Level/Level.s: src/Game/Level/Level.cpp.s
+
+.PHONY : src/Game/Level/Level.s
+
+# target to generate assembly for a file
+src/Game/Level/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.s
+.PHONY : src/Game/Level/Level.cpp.s
+
+src/Game/Weapon/Bow.o: src/Game/Weapon/Bow.cpp.o
+
+.PHONY : src/Game/Weapon/Bow.o
+
+# target to build an object file
+src/Game/Weapon/Bow.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o
+.PHONY : src/Game/Weapon/Bow.cpp.o
+
+src/Game/Weapon/Bow.i: src/Game/Weapon/Bow.cpp.i
+
+.PHONY : src/Game/Weapon/Bow.i
+
+# target to preprocess a source file
+src/Game/Weapon/Bow.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.i
+.PHONY : src/Game/Weapon/Bow.cpp.i
+
+src/Game/Weapon/Bow.s: src/Game/Weapon/Bow.cpp.s
+
+.PHONY : src/Game/Weapon/Bow.s
+
+# target to generate assembly for a file
+src/Game/Weapon/Bow.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.s
+.PHONY : src/Game/Weapon/Bow.cpp.s
+
+src/Game/Weapon/Bullet.o: src/Game/Weapon/Bullet.cpp.o
+
+.PHONY : src/Game/Weapon/Bullet.o
+
+# target to build an object file
+src/Game/Weapon/Bullet.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o
+.PHONY : src/Game/Weapon/Bullet.cpp.o
+
+src/Game/Weapon/Bullet.i: src/Game/Weapon/Bullet.cpp.i
+
+.PHONY : src/Game/Weapon/Bullet.i
+
+# target to preprocess a source file
+src/Game/Weapon/Bullet.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.i
+.PHONY : src/Game/Weapon/Bullet.cpp.i
+
+src/Game/Weapon/Bullet.s: src/Game/Weapon/Bullet.cpp.s
+
+.PHONY : src/Game/Weapon/Bullet.s
+
+# target to generate assembly for a file
+src/Game/Weapon/Bullet.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.s
+.PHONY : src/Game/Weapon/Bullet.cpp.s
+
+src/Game/Weapon/RangeWeapon.o: src/Game/Weapon/RangeWeapon.cpp.o
+
+.PHONY : src/Game/Weapon/RangeWeapon.o
+
+# target to build an object file
+src/Game/Weapon/RangeWeapon.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o
+.PHONY : src/Game/Weapon/RangeWeapon.cpp.o
+
+src/Game/Weapon/RangeWeapon.i: src/Game/Weapon/RangeWeapon.cpp.i
+
+.PHONY : src/Game/Weapon/RangeWeapon.i
+
+# target to preprocess a source file
+src/Game/Weapon/RangeWeapon.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.i
+.PHONY : src/Game/Weapon/RangeWeapon.cpp.i
+
+src/Game/Weapon/RangeWeapon.s: src/Game/Weapon/RangeWeapon.cpp.s
+
+.PHONY : src/Game/Weapon/RangeWeapon.s
+
+# target to generate assembly for a file
+src/Game/Weapon/RangeWeapon.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.s
+.PHONY : src/Game/Weapon/RangeWeapon.cpp.s
+
+src/Game/Weapon/Weapon.o: src/Game/Weapon/Weapon.cpp.o
+
+.PHONY : src/Game/Weapon/Weapon.o
+
+# target to build an object file
+src/Game/Weapon/Weapon.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o
+.PHONY : src/Game/Weapon/Weapon.cpp.o
+
+src/Game/Weapon/Weapon.i: src/Game/Weapon/Weapon.cpp.i
+
+.PHONY : src/Game/Weapon/Weapon.i
+
+# target to preprocess a source file
+src/Game/Weapon/Weapon.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.i
+.PHONY : src/Game/Weapon/Weapon.cpp.i
+
+src/Game/Weapon/Weapon.s: src/Game/Weapon/Weapon.cpp.s
+
+.PHONY : src/Game/Weapon/Weapon.s
+
+# target to generate assembly for a file
+src/Game/Weapon/Weapon.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.s
+.PHONY : src/Game/Weapon/Weapon.cpp.s
+
+src/Game/main.o: src/Game/main.cpp.o
+
+.PHONY : src/Game/main.o
+
+# target to build an object file
+src/Game/main.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o
+.PHONY : src/Game/main.cpp.o
+
+src/Game/main.i: src/Game/main.cpp.i
+
+.PHONY : src/Game/main.i
+
+# target to preprocess a source file
+src/Game/main.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.i
+.PHONY : src/Game/main.cpp.i
+
+src/Game/main.s: src/Game/main.cpp.s
+
+.PHONY : src/Game/main.s
+
+# target to generate assembly for a file
+src/Game/main.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.s
+.PHONY : src/Game/main.cpp.s
 
 src/Init/Falcon.o: src/Init/Falcon.cpp.o
 
@@ -338,60 +635,6 @@ src/Init/Falcon.s: src/Init/Falcon.cpp.s
 src/Init/Falcon.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/Falcon.cpp.s
 .PHONY : src/Init/Falcon.cpp.s
-
-src/Init/Game.o: src/Init/Game.cpp.o
-
-.PHONY : src/Init/Game.o
-
-# target to build an object file
-src/Init/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o
-.PHONY : src/Init/Game.cpp.o
-
-src/Init/Game.i: src/Init/Game.cpp.i
-
-.PHONY : src/Init/Game.i
-
-# target to preprocess a source file
-src/Init/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.i
-.PHONY : src/Init/Game.cpp.i
-
-src/Init/Game.s: src/Init/Game.cpp.s
-
-.PHONY : src/Init/Game.s
-
-# target to generate assembly for a file
-src/Init/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.s
-.PHONY : src/Init/Game.cpp.s
-
-src/Init/main.o: src/Init/main.cpp.o
-
-.PHONY : src/Init/main.o
-
-# target to build an object file
-src/Init/main.cpp.o:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o
-.PHONY : src/Init/main.cpp.o
-
-src/Init/main.i: src/Init/main.cpp.i
-
-.PHONY : src/Init/main.i
-
-# target to preprocess a source file
-src/Init/main.cpp.i:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.i
-.PHONY : src/Init/main.cpp.i
-
-src/Init/main.s: src/Init/main.cpp.s
-
-.PHONY : src/Init/main.s
-
-# target to generate assembly for a file
-src/Init/main.cpp.s:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.s
-.PHONY : src/Init/main.cpp.s
 
 src/InputOutput/IOManager.o: src/InputOutput/IOManager.cpp.o
 
@@ -446,6 +689,33 @@ src/InputOutput/InputManager.s: src/InputOutput/InputManager.cpp.s
 src/InputOutput/InputManager.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.s
 .PHONY : src/InputOutput/InputManager.cpp.s
+
+src/Object/Projectile.o: src/Object/Projectile.cpp.o
+
+.PHONY : src/Object/Projectile.o
+
+# target to build an object file
+src/Object/Projectile.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o
+.PHONY : src/Object/Projectile.cpp.o
+
+src/Object/Projectile.i: src/Object/Projectile.cpp.i
+
+.PHONY : src/Object/Projectile.i
+
+# target to preprocess a source file
+src/Object/Projectile.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.i
+.PHONY : src/Object/Projectile.cpp.i
+
+src/Object/Projectile.s: src/Object/Projectile.cpp.s
+
+.PHONY : src/Object/Projectile.s
+
+# target to generate assembly for a file
+src/Object/Projectile.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.s
+.PHONY : src/Object/Projectile.cpp.s
 
 src/ResourceManager/ResourceManager.o: src/ResourceManager/ResourceManager.cpp.o
 
@@ -609,24 +879,54 @@ help:
 	@echo "... src/Errors/Errors.o"
 	@echo "... src/Errors/Errors.i"
 	@echo "... src/Errors/Errors.s"
-	@echo "... src/GLSL/GLSLProgram.o"
-	@echo "... src/GLSL/GLSLProgram.i"
-	@echo "... src/GLSL/GLSLProgram.s"
+	@echo "... src/GLSL/ShaderProgram.o"
+	@echo "... src/GLSL/ShaderProgram.i"
+	@echo "... src/GLSL/ShaderProgram.s"
+	@echo "... src/Game/Actor/Actor.o"
+	@echo "... src/Game/Actor/Actor.i"
+	@echo "... src/Game/Actor/Actor.s"
+	@echo "... src/Game/Actor/Enemy.o"
+	@echo "... src/Game/Actor/Enemy.i"
+	@echo "... src/Game/Actor/Enemy.s"
+	@echo "... src/Game/Actor/Human.o"
+	@echo "... src/Game/Actor/Human.i"
+	@echo "... src/Game/Actor/Human.s"
+	@echo "... src/Game/Actor/Player.o"
+	@echo "... src/Game/Actor/Player.i"
+	@echo "... src/Game/Actor/Player.s"
+	@echo "... src/Game/Game.o"
+	@echo "... src/Game/Game.i"
+	@echo "... src/Game/Game.s"
+	@echo "... src/Game/Level/Level.o"
+	@echo "... src/Game/Level/Level.i"
+	@echo "... src/Game/Level/Level.s"
+	@echo "... src/Game/Weapon/Bow.o"
+	@echo "... src/Game/Weapon/Bow.i"
+	@echo "... src/Game/Weapon/Bow.s"
+	@echo "... src/Game/Weapon/Bullet.o"
+	@echo "... src/Game/Weapon/Bullet.i"
+	@echo "... src/Game/Weapon/Bullet.s"
+	@echo "... src/Game/Weapon/RangeWeapon.o"
+	@echo "... src/Game/Weapon/RangeWeapon.i"
+	@echo "... src/Game/Weapon/RangeWeapon.s"
+	@echo "... src/Game/Weapon/Weapon.o"
+	@echo "... src/Game/Weapon/Weapon.i"
+	@echo "... src/Game/Weapon/Weapon.s"
+	@echo "... src/Game/main.o"
+	@echo "... src/Game/main.i"
+	@echo "... src/Game/main.s"
 	@echo "... src/Init/Falcon.o"
 	@echo "... src/Init/Falcon.i"
 	@echo "... src/Init/Falcon.s"
-	@echo "... src/Init/Game.o"
-	@echo "... src/Init/Game.i"
-	@echo "... src/Init/Game.s"
-	@echo "... src/Init/main.o"
-	@echo "... src/Init/main.i"
-	@echo "... src/Init/main.s"
 	@echo "... src/InputOutput/IOManager.o"
 	@echo "... src/InputOutput/IOManager.i"
 	@echo "... src/InputOutput/IOManager.s"
 	@echo "... src/InputOutput/InputManager.o"
 	@echo "... src/InputOutput/InputManager.i"
 	@echo "... src/InputOutput/InputManager.s"
+	@echo "... src/Object/Projectile.o"
+	@echo "... src/Object/Projectile.i"
+	@echo "... src/Object/Projectile.s"
 	@echo "... src/ResourceManager/ResourceManager.o"
 	@echo "... src/ResourceManager/ResourceManager.i"
 	@echo "... src/ResourceManager/ResourceManager.s"

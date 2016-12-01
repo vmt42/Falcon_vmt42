@@ -4,8 +4,10 @@
 
 #include "TextureCache.h"
 #include <string>
-namespace Falcon {
-    class ResourceManager {
+namespace Falcon
+{
+    class ResourceManager
+    {
     public:
         static GLTexture getTexture(std::string filePath);
 

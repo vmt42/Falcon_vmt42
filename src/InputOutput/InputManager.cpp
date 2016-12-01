@@ -14,7 +14,7 @@ namespace Falcon
         m_keyMap[keyID] = false;
     }
 
-    bool InputManager::isKeyPressed(unsigned int keyID)
+    bool InputManager::isKeyPressed(unsigned int keyID) const
     {
         auto it = m_keyMap.find(keyID);
 
@@ -22,5 +22,11 @@ namespace Falcon
             return it->second;
         else
             return false;
+    }
+
+    void InputManager::setMouseCoords(float x, float y)
+    {
+        m_mouseCoords.x = x;
+        m_mouseCoords.y = y;
     }
 }

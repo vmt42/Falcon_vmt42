@@ -54,6 +54,7 @@ namespace Falcon
         for (int i = 0; i < m_renderBatches.size(); i++)
         {
             glBindTexture(GL_TEXTURE_2D, m_renderBatches[i].texture);
+            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
             glDrawArrays(GL_TRIANGLES, m_renderBatches[i].offset, m_renderBatches[i].numVertices);
         }
         glBindVertexArray(0);

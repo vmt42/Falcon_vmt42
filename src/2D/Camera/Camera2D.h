@@ -15,6 +15,7 @@ namespace Falcon
         void init(int screenWidth, int screenHeight);
 
         void update();
+        glm::vec2 screenToWorld(glm::vec2 screenCoords);
 
         void setPosition(const glm::vec2 &newPosition) { m_position = newPosition; m_shouldUpdate = true; };
         void setScale(float newScale) { m_scale = newScale; m_shouldUpdate = true; };

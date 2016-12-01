@@ -28,7 +28,8 @@ namespace Falcon {
 
 
         std::printf("*** OpenGL Version: %s ***", glGetString(GL_VERSION));
-        glClearColor(0.0f, 0.0f, 1.0f, 1.0); // Set background color
+        std::printf("\n");
+        glClearColor(44.0f / 255.0f, 62.0f / 255.0f, 80.0f / 255.0f, 1.0); // Set background color
 
         //Set VSYNC to 0
         SDL_GL_SetSwapInterval(0);

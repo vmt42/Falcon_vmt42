@@ -14,7 +14,7 @@ namespace Falcon
         if (m_shouldUpdate)
         {
             //Camera translation
-            glm::vec3 translate(-m_position.x + m_screenWidth / 2, m_position.y + m_screenHeight / 2, 0.0f);
+            glm::vec3 translate(-m_position.x + m_screenWidth / 2, -m_position.y + m_screenHeight / 2, 0.0f);
             m_cameraMatrix = glm::translate(m_orthoMatrix, translate);
 
             //Camera scaling
@@ -24,5 +24,20 @@ namespace Falcon
             m_shouldUpdate = false;
         }
     }
+
+    glm::vec2 Camera2D::screenToWorld(glm::vec2 screenCoords)
+    {
+        // Invert Y dir
+        screenCoords.y = m_screenHeight - screenCoords.y;
+        // Make 0 as center
+        screenCoords -= glm::vec2(m_screenWidth / 2, m_screenHeight / 2);
+        // Scale coords
+        screenCoords /= m_scale;
+        // Translate with camera position
+        screenCoords += m_position;
+
+        return screenCoords;
+    }
+
 
 }

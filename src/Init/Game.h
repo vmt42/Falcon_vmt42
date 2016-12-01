@@ -6,7 +6,7 @@
 #include "GL/glew.h"
 #include "../States/StateManager.h"
 #include "../2D/Sprite.h"
-#include "../GLSL/GLSLProgram.h"
+#include "../GLSL/ShaderProgram.h"
 #include "../2D/GLTexture.h"
 #include "../Window/Window.h"
 #include "../2D/Camera/Camera2D.h"
@@ -14,6 +14,7 @@
 #include "../2D/SpriteBatch/SpriteBatch.h"
 #include "../InputOutput/InputManager.h"
 #include "../Timing/Timing.h"
+#include "../Object/Projectile.h"
 
 
 class Game
@@ -37,11 +38,13 @@ private:
 
     Falcon::Window m_window;
     Falcon::StateType m_currentState;
-    Falcon::GLSLProgram m_shaderProgram;
+    Falcon::ShaderProgram m_shaderProgram;
     Falcon::Camera2D m_camera;
     Falcon::SpriteBatch m_spriteBatch;
     Falcon::InputManager m_inputManager;
     Falcon::FPSLimiter m_FPSLimiter;
+
+    std::vector<Falcon::Projectile> m_projectiles;
 
     float m_FPS;
     float m_time;

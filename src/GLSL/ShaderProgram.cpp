@@ -1,11 +1,11 @@
-#include "GLSLProgram.h"
+#include "ShaderProgram.h"
 #include "../Errors/Errors.h"
 #include <fstream>
 #include <vector>
 //#include <GL/glew.h>
 
 namespace Falcon {
-    void GLSLProgram::compileShaders(const std::string &vertShaderPath, const std::string &fragShaderPath) {
+    void ShaderProgram::compileShaders(const std::string &vertShaderPath, const std::string &fragShaderPath) {
         //Get a program object.
         m_programID = glCreateProgram();
 
@@ -24,7 +24,7 @@ namespace Falcon {
 
     }
 
-    void GLSLProgram::linkShaders() {
+    void ShaderProgram::linkShaders() {
 
         //Vertex and fragment shaders are successfully compiled.
         //Now time to link them together into a program.
@@ -66,7 +66,7 @@ namespace Falcon {
         glDeleteShader(m_fragShaderID);
     }
 
-    void GLSLProgram::compileShader(const std::string &shaderPath, GLuint id) {
+    void ShaderProgram::compileShader(const std::string &shaderPath, GLuint id) {
 
         std::ifstream shaderFile(shaderPath);
         if (shaderFile.fail()) {
@@ -105,25 +105,25 @@ namespace Falcon {
 
     }
 
-    void GLSLProgram::addAttribute(const std::string &attributeName) {
+    void ShaderProgram::addAttribute(const std::string &attributeName) {
         glBindAttribLocation(m_programID, m_numAttributes++, attributeName.c_str());
     }
 
-    void GLSLProgram::use() {
+    void ShaderProgram::use() {
         glUseProgram(m_programID);
         for (GLuint i = 0; i < m_numAttributes; i++) {
             glEnableVertexAttribArray(i);
         }
     }
 
-    void GLSLProgram::unuse() {
+    void ShaderProgram::unuse() {
         glUseProgram(0);
         for (GLuint i = 0; i < m_numAttributes; i++) {
             glDisableVertexAttribArray(i);
         }
     }
 
-    GLint GLSLProgram::getUniformLocation(const std::string &uniformName) {
+    GLint ShaderProgram::getUniformLocation(const std::string &uniformName) {
         GLint location = glGetUniformLocation(m_programID, uniformName.c_str());
 
         /*if (location == GL_INVALID_INDEX) {

@@ -134,25 +134,79 @@
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Errors/Errors.h">
 			<Option target="FalconLatinum"/>
 		</Unit>
-		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.cpp">
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/ShaderProgram.cpp">
 			<Option target="FalconLatinum"/>
 		</Unit>
-		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/GLSLProgram.h">
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/GLSL/ShaderProgram.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Game/main.cpp">
 			<Option target="FalconLatinum"/>
 		</Unit>
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Falcon.cpp">
 			<Option target="FalconLatinum"/>
 		</Unit>
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Falcon.h">
-			<Option target="FalconLatinum"/>
-		</Unit>
-		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.cpp">
-			<Option target="FalconLatinum"/>
-		</Unit>
-		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/Game.h">
-			<Option target="FalconLatinum"/>
-		</Unit>
-		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Init/main.cpp">
 			<Option target="FalconLatinum"/>
 		</Unit>
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/IOManager.cpp">
@@ -165,6 +219,12 @@
 			<Option target="FalconLatinum"/>
 		</Unit>
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/InputOutput/InputManager.h">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Object/Projectile.cpp">
+			<Option target="FalconLatinum"/>
+		</Unit>
+		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/Object/Projectile.h">
 			<Option target="FalconLatinum"/>
 		</Unit>
 		<Unit filename="/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.cpp">

@@ -53,28 +53,47 @@ void Game::processInput()
                 break;
             case SDL_KEYUP:
                 m_inputManager.releaseKey(e.key.keysym.sym);
+            case SDL_MOUSEBUTTONDOWN:
+                m_inputManager.pressKey(e.button.button);
+                break;
+            case SDL_MOUSEBUTTONUP:
+                m_inputManager.releaseKey(e.button.button);
+            case SDL_MOUSEMOTION:
+                m_inputManager.setMouseCoords(e.motion.x, e.motion.y);
             default:
                 break;
         }
     }
 
     if (m_inputManager.isKeyPressed(SDLK_w))
-        m_camera.setPosition(m_camera.getPosition() - glm::vec2(0.0f, CAMERA_SPEED));
-
-    if (m_inputManager.isKeyPressed(SDLK_s))
         m_camera.setPosition(m_camera.getPosition() + glm::vec2(0.0f, CAMERA_SPEED));
 
+    if (m_inputManager.isKeyPressed(SDLK_s))
+        m_camera.setPosition(m_camera.getPosition() - glm::vec2(0.0f, CAMERA_SPEED));
+
     if (m_inputManager.isKeyPressed(SDLK_a))
-        m_camera.setPosition(m_camera.getPosition() - glm::vec2(CAMERA_SPEED, 0.0f));
+        m_camera.setPosition(m_camera.getPosition() + glm::vec2(CAMERA_SPEED, 0.0f));
 
     if (m_inputManager.isKeyPressed(SDLK_d))
-        m_camera.setPosition(m_camera.getPosition() + glm::vec2(CAMERA_SPEED, 0.0f));
+        m_camera.setPosition(m_camera.getPosition() - glm::vec2(CAMERA_SPEED, 0.0f));
 
     if (m_inputManager.isKeyPressed(SDLK_q))
         m_camera.setScale(m_camera.getScale() + SCALE_SPEED);
 
     if (m_inputManager.isKeyPressed(SDLK_e))
         m_camera.setScale(m_camera.getScale() - SCALE_SPEED);
+
+    if (m_inputManager.isKeyPressed(SDL_BUTTON_LEFT))
+    {
+        glm::vec2 mouseCoords = m_inputManager.getMouseCoords();
+        mouseCoords = m_camera.screenToWorld(mouseCoords);
+
+        glm::vec2 playerPos(0.0f);
+        glm::vec2 direction = mouseCoords - playerPos;
+        direction = glm::normalize(direction);
+
+        m_projectiles.emplace_back(Falcon::Projectile(playerPos, direction, 10, 1000));
+    }
 
 }
 
@@ -87,18 +106,19 @@ void Game::gameLoop()
         m_time += 0.01;
 
         m_camera.update();
+
+        for (auto &projectile : m_projectiles)
+        {
+            if(projectile.update())
+            {
+                projectile = m_projectiles.back();
+                m_projectiles.pop_back();
+            }
+        }
+
         draw();
 
         m_FPS = m_FPSLimiter.end();
-
-        //Print only every 30 frames
-        static int frameCounter = 0;
-        frameCounter++;
-        if (frameCounter == 30)
-        {
-            std::cout << m_FPS << std::endl;
-            frameCounter = 0;
-        }
     }
 }
 
@@ -133,8 +153,12 @@ void Game::draw()
     color.b = 255;
     color.a = 255;
     m_spriteBatch.draw(pos, uv, texture.id, 0.0f, color);
-    m_spriteBatch.draw(pos + glm::vec4(50, 0, 0, 0), uv, texture.id, 0.0f, color);
+    //m_spriteBatch.draw(pos + glm::vec4(50, 0, 0, 0), uv, texture.id, 0.0f, color);
 
+    for (auto &projectile : m_projectiles)
+    {
+        projectile.draw(m_spriteBatch);
+    }
 
     m_spriteBatch.end();
 
@@ -147,3 +171,5 @@ void Game::draw()
     m_window.swapBuffer(); // Swap buffer
 
 }
+
+
