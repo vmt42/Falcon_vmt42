@@ -5,18 +5,24 @@
 #include "../Errors/Errors.h"
 #include "../ResourceManager/ResourceManager.h"
 #include "Weapon/RangeWeapon.h"
-
+#include "Weapon/MeleeWeapon.h"
 
 Game::~Game()
 {
     for (auto &level : m_levels)
+    {
         delete level;
+    }
 
     for (auto &human : m_humans)
+    {
         delete human;
+    }
 
     for (auto &enemy : m_enemies)
+    {
         delete enemy;
+    }
 }
 
 void Game::run()
@@ -35,50 +41,44 @@ void Game::initSystems()
     glewExperimental = GL_TRUE;
     glewInit();
 
-
     m_camera.init(m_screenWidth, m_screenHeight);
     m_actorSpriteBatch.init();
-    m_FPSLimiter.init(60.0f);
+    m_decalsSpriteBatch.init();
+    m_FPSLimiter.init(9999999999.0f);
 }
 
 void Game::initLevel()
 {
-    m_levels.push_back(new Level("levels/lvl1.txt"));
+    m_levels.emplace_back(new Level("levels/lvl1.txt"));
 
-    m_levels[m_curLVL]->init();
-
-    m_player = new Player();
-    m_player->init(m_levels[m_curLVL]->getPlayerStartPos(), 5.0f, &m_inputManager, &m_camera, &m_bullets);
+    m_player = new Player(m_levels[m_curLVL]->getPlayerStartPos(), 5.0f, &m_inputManager, &m_camera, &m_bullets, &m_slashes);
     m_humans.emplace_back(m_player);
 
-    std::cout << (int)m_levels[m_curLVL]->getWidth() - 1 << std::endl;
-    std::cout << (int)m_levels[m_curLVL]->getHeight() - 1 << std::endl;
     std::mt19937 RNG;
-    std::uniform_int_distribution<int> randomXPos(2, (int)m_levels[m_curLVL]->getWidth() - 2);
-    std::uniform_int_distribution<int> randomYPos(2, (int)m_levels[m_curLVL]->getHeight() - 2);
+    std::uniform_int_distribution<int> randomXPos(2, m_levels[m_curLVL]->getWidth() - 2);
+    std::uniform_int_distribution<int> randomYPos(2, m_levels[m_curLVL]->getHeight() - 2);
 
 
-    for (int i = 0; i < 100; i++)
+    for (auto i = 0; i < 100; i++)
     {
-        m_humans.emplace_back(new Human());
         glm::vec2 pos(randomXPos(RNG) * TILE_WIDTH, randomYPos(RNG) * TILE_HEIGHT);
-        m_humans.back()->init(pos, 0.5f);
+        m_humans.emplace_back(new Human(pos, 0.5f));
     }
 
     for (auto &humanStartPos : m_levels[m_curLVL]->getHumanStartPos())
     {
-        m_humans.emplace_back(new Human());
-        m_humans.back()->init(humanStartPos, 0.0f);
+        m_humans.emplace_back(new Human(humanStartPos, 0.0f));
     }
 
     for (auto &enemyStartPos : m_levels[m_curLVL]->getEnemyStartPos())
     {
-        m_enemies.emplace_back(new Enemy());
-        m_enemies.back()->init(enemyStartPos, 1.0f);
+        m_enemies.emplace_back(new Enemy(enemyStartPos, 1.0f));
     }
 
     m_player->addRangeWeapon(new RangeWeapon(30, 30.0f, 20.0f, 1.0f, 10.0f));
     m_player->addRangeWeapon(new RangeWeapon(60, 4.0f, 20.0f, 20.0f, 40.0f));
+    m_player->addRangeWeapon(new RangeWeapon(1, 4.0f, 20.0f, 1, 70));
+    m_player->addMeleeWeapon(new MeleeWeapon(20, 3.0f));
 }
 
 void Game::initShaders()
@@ -124,35 +124,58 @@ void Game::processInput()
 
 void Game::gameLoop()
 {
+    const int MAX_LOGIC_STEPS = 6;
+    const float TARGETED_FPS = 60.0f;
+    const float MS_PER_SECOND = 1000.0f;
+    const float DESIRED_FRAMETIME = MS_PER_SECOND / TARGETED_FPS;
+    const float MAX_DELTA_TIME = 1.0f;
+
+    float prevTicks = SDL_GetTicks();
+
     while (m_currentState != Falcon::StateType::EXIT)
     {
         m_FPSLimiter.begin();
+
+        float newTicks = SDL_GetTicks();
+        float frameTime = newTicks - prevTicks;
+        prevTicks = newTicks;
+        float totalDeltaTime = frameTime / DESIRED_FRAMETIME;
+
         processInput();
 
         m_camera.setPosition(m_player->getPosition());
+
         m_camera.update();
 
+        int i = 0;
+        while (totalDeltaTime > 0.0f && i < MAX_LOGIC_STEPS)
+        {
+            float deltaTime = std::min(totalDeltaTime, MAX_DELTA_TIME);
+            updateActors(deltaTime);
+            updateBullets(deltaTime);
+            totalDeltaTime -= deltaTime;
+            i++;
+        }
 
-        updateActors();
-        updateBullets();
 
         m_time += 0.01;
         draw();
 
         m_FPS = m_FPSLimiter.end();
+        std::cout << m_FPS << "\n";
     }
 }
 
-void Game::updateActors()
+void Game::updateActors(float deltaTime)
 {
     //Update humans
     for (auto &human : m_humans)
     {
-        human->update(m_levels[m_curLVL]->getLevelData(), m_humans, m_enemies);
+        human->update(m_levels[m_curLVL]->getLevelData(), m_humans, m_enemies, deltaTime);
     }
 
     //Update human collisions
-    for (int i = 0; i < m_humans.size(); i++)
+    for (auto i = 0; i < m_humans.size(); i++)
     {
         for (int j = i + 1; j < m_humans.size(); j++)
         {
@@ -163,40 +186,124 @@ void Game::updateActors()
     //Update enemies
     for (auto &enemy : m_enemies)
     {
-        enemy->update(m_levels[m_curLVL]->getLevelData(), m_humans, m_enemies);
+        enemy->update(m_levels[m_curLVL]->getLevelData(), m_humans, m_enemies, deltaTime);
     }
 
     //Update enemy collisions
-    for (int i = 0; i < m_enemies.size(); i++)
+    for (auto i = 0; i < m_enemies.size(); i++)
     {
         //Collide with other enemies
-        for (int j = i + 1; j < m_enemies.size(); j++)
+        for (auto j = i + 1; j < m_enemies.size(); j++)
         {
             m_enemies[i]->actorCollision(m_enemies[j]);
         }
+
         //Colide with humans
-        for (int j = 1; j < m_humans.size(); j++)
+        for (auto j = 1; j < m_humans.size();)
         {
             if (m_enemies[i]->actorCollision(m_humans[j]))
             {
-                m_enemies.emplace_back(new Enemy());
-                m_enemies.back()->init(m_humans[j]->getPosition(), 1.0f);
+                m_enemies.emplace_back(new Enemy(m_humans[j]->getPosition(), 1.0f));
                 delete m_humans[j];
-                m_humans[j] = m_humans.back();
-                m_humans.pop_back();
+                m_humans.erase(m_humans.begin() + j);
+            }
+            else
+            {
+                j++;
             }
         }
 
         //Collide with player
-        if (m_enemies[i]->actorCollision(m_player))
-            Falcon::fatalError("END OF GAME");
+        /*if (m_enemies[i]->actorCollision(m_player))
+            Falcon::fatalError("END OF GAME");*/
     }
 
 }
-void Game::updateBullets()
+void Game::updateBullets(float deltaTime)
 {
-    for (auto& bullet : m_bullets)
-        bullet.update(m_humans, m_enemies);
+    // Collide slashes with actors
+    for (auto i = 0; i < m_slashes.size(); i++)
+    {
+        for (auto j = 0; j < m_enemies.size();)
+        {
+            if (m_slashes[i].actorCollision(m_enemies[j]))
+            {
+                m_bloodDecals.emplace_back(m_enemies[j]->getPosition());
+                if (m_enemies[j]->addDamage(m_slashes[i].getDamage()))
+                {
+                    delete m_enemies[j];
+                    m_enemies.erase(m_enemies.begin() + j);
+                }
+                else
+                {
+                    j++;
+                }
+            }
+            else
+            {
+                j++;
+            }
+        }
+    }
+
+    // Update slashes
+    for (auto i = 0; i < m_slashes.size();)
+    {
+        if(m_slashes[i].update(deltaTime))
+        {
+            m_slashes.erase(m_slashes.begin() + i);
+        }
+        else
+        {
+            i++;
+        }
+    }
+
+    // Update and collide with world
+    for (auto i = 0; i < m_bullets.size();)
+    {
+        // If true, collision with wall
+        if (m_bullets[i].update(m_levels[m_curLVL]->getLevelData(), deltaTime))
+        {
+            m_bullets.erase(m_bullets.begin() + i);
+        }
+        else
+        {
+            i++;
+        }
+    }
+
+    // Collide bullets with actors TODO: MAKE JUST ONE ACTORS VECTOR OR MAKE INTERFACES LIKE Drawable and etc.
+    for (auto i = 0; i < m_bullets.size(); i++)
+    {
+        for (auto j = 0; j < m_enemies.size();)
+        {
+            // Check collision
+            if (m_bullets[i].actorCollision(m_enemies[j]))
+            {
+                // Add blood decal
+                m_bloodDecals.emplace_back(m_enemies[j]->getPosition());
+                // Returns true, when enemy is dead
+                if (m_enemies[j]->addDamage(m_bullets[i].getDamage()))
+                {
+                    delete m_enemies[j];
+                    m_enemies.erase(m_enemies.begin() + j);
+                }
+                else
+                {
+                    j++;
+                }
+                // Remove bullet
+                m_bullets.erase(m_bullets.begin() + i);
+                i--;
+                break;
+            }
+            else
+            {
+                j++;
+            }
+        }
+    }
 }
 
 void Game::draw()
@@ -221,17 +328,36 @@ void Game::draw()
     //Draw level
     m_levels[m_curLVL]->draw();
 
+    //Draw all decals
+    m_decalsSpriteBatch.begin();
+    for (auto &decal : m_bloodDecals)
+    {
+        decal.draw(m_decalsSpriteBatch);
+    }
+    m_decalsSpriteBatch.end();
+    m_decalsSpriteBatch.renderBatch();
+
     //Begin drawing actors
     m_actorSpriteBatch.begin();
 
     for (auto &human : m_humans)
+    {
         human->draw(m_actorSpriteBatch);
+    }
 
     for (auto &enemy : m_enemies)
+    {
         enemy->draw(m_actorSpriteBatch);
+    }
 
     for (auto& bullet : m_bullets)
+    {
         bullet.draw(m_actorSpriteBatch);
+    }
+    for (auto& slash : m_slashes)
+    {
+        slash.draw(m_actorSpriteBatch);
+    }
 
     m_actorSpriteBatch.end();
     m_actorSpriteBatch.renderBatch();

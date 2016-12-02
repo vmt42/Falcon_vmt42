@@ -48,6 +48,7 @@ CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Actor/Actor
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Actor/Enemy.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Actor/Enemy.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Actor/Human.h
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/ResourceManager/ResourceManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o: ../src/ResourceManager/TextureCache.h
 
@@ -57,6 +58,7 @@ CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/2D/Vertex.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/Game/Actor/Actor.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/Game/Actor/Human.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/Game/Actor/Human.h
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/ResourceManager/ResourceManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o: ../src/ResourceManager/TextureCache.h
 
@@ -69,12 +71,24 @@ CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Actor/Enem
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Actor/Human.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Actor/Player.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Actor/Player.h
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Weapon/Bullet.h
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Weapon/MeleeWeapon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Weapon/RangeWeapon.h
+CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Weapon/Slash.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/Game/Weapon/Weapon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/InputOutput/InputManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/ResourceManager/ResourceManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o: ../src/ResourceManager/TextureCache.h
+
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/2D/GLTexture.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/2D/Vertex.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/Game/Decals/Blood.cpp
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/Game/Decals/Blood.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/Game/Level/Level.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/ResourceManager/ResourceManager.h
+CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o: ../src/ResourceManager/TextureCache.h
 
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/2D/Camera/Camera2D.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/2D/GLTexture.h
@@ -87,11 +101,14 @@ CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Actor/Actor.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Actor/Enemy.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Actor/Human.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Actor/Player.h
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Decals/Blood.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Game.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Game.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Weapon/Bullet.h
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Weapon/MeleeWeapon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Weapon/RangeWeapon.h
+CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Weapon/Slash.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Game/Weapon/Weapon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/Init/Falcon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o: ../src/InputOutput/InputManager.h
@@ -111,24 +128,27 @@ CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o: ../src/Game/Level/Level
 CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o: ../src/ResourceManager/ResourceManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o: ../src/ResourceManager/TextureCache.h
 
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/2D/Vertex.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Actor/Actor.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Actor/Enemy.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Weapon/Bow.cpp
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Weapon/Bow.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Weapon/Bullet.h
-CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o: ../src/Game/Weapon/Weapon.h
-
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/2D/GLTexture.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/2D/Vertex.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Actor/Actor.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Actor/Enemy.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Actor/Human.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Weapon/Bullet.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/Game/Weapon/Bullet.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/ResourceManager/ResourceManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o: ../src/ResourceManager/TextureCache.h
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/2D/Vertex.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Actor/Actor.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Actor/Enemy.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Weapon/Bullet.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Weapon/MeleeWeapon.cpp
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Weapon/MeleeWeapon.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Weapon/Slash.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o: ../src/Game/Weapon/Weapon.h
 
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/2D/Vertex.h
@@ -138,6 +158,15 @@ CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/Game/Weap
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/Game/Weapon/RangeWeapon.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/Game/Weapon/RangeWeapon.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o: ../src/Game/Weapon/Weapon.h
+
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/2D/GLTexture.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/2D/Vertex.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/Game/Actor/Actor.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/Game/Weapon/Slash.cpp
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/Game/Weapon/Slash.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/ResourceManager/ResourceManager.h
+CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o: ../src/ResourceManager/TextureCache.h
 
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o: ../src/2D/SpriteBatch/SpriteBatch.h
 CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o: ../src/2D/Vertex.h
@@ -157,13 +186,17 @@ CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Actor/Actor.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Actor/Enemy.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Actor/Human.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Actor/Player.h
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Decals/Blood.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Game.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Level/Level.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Weapon/Bullet.h
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/Weapon/Slash.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Game/main.cpp
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Init/Falcon.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/InputOutput/InputManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Object/Projectile.h
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/ResourceManager/ResourceManager.h
+CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/ResourceManager/TextureCache.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/States/StateManager.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Timing/Timing.h
 CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o: ../src/Window/Window.h

@@ -37,7 +37,6 @@ void Actor::checkTilePosition(const std::vector<std::string> &level, std::vector
 // AABB collision
 void Actor::collideWithTile(glm::vec2 tilePos)
 {
-
     const float TILE_RADIUS = TILE_WIDTH / 2;
     const float MIN_DISTANCE = ACTOR_RADIUS + TILE_RADIUS;
 
@@ -73,7 +72,6 @@ void Actor::collideWithTile(glm::vec2 tilePos)
             }
         }
     }
-
 }
 
 // Circular collision
@@ -99,4 +97,12 @@ bool Actor::actorCollision(Actor* actor)
         return true;
     }
     return false;
+}
+
+bool Actor::addDamage(float damage)
+{
+    m_health -= damage;
+    m_color = m_color - Falcon::Color(0, 75, 75, 0);
+
+    return m_health <= 0;
 }

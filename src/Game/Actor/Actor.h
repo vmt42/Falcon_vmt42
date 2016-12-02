@@ -18,12 +18,15 @@ public:
     Actor() {};
     virtual ~Actor() {};
 
-    virtual void update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies) = 0;
+    virtual void update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies, float deltaTime) = 0;
     virtual void draw(Falcon::SpriteBatch& spriteBatch) = 0;
 
     bool levelCollision(const std::vector<std::string> &level);
     bool actorCollision(Actor* actor);
+    bool addDamage(float damage);
     glm::vec2 getPosition() const { return m_position; };
+
+
 protected:
     void checkTilePosition(const std::vector<std::string> &level, std::vector<glm::vec2>& collideTilePositions, float x, float y);
     void collideWithTile(glm::vec2 tilePos);
@@ -31,6 +34,8 @@ protected:
 protected:
     float m_speed;
     glm::vec2 m_position;
+    float m_health;
+    Falcon::Color m_color;
 };
 
 

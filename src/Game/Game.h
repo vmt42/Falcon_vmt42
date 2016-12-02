@@ -18,6 +18,7 @@
 #include "Actor/Player.h"
 #include "Actor/Enemy.h"
 #include "Weapon/Bullet.h"
+#include "Decals/Blood.h"
 
 
 class Game
@@ -35,8 +36,8 @@ private:
     void processInput();
     void gameLoop();
     void draw();
-    void updateActors();
-    void updateBullets();
+    void updateActors(float deltaTime);
+    void updateBullets(float deltaTime);
 
 private:
     int m_screenWidth;
@@ -48,6 +49,7 @@ private:
     Falcon::ShaderProgram m_shaderProgram;
     Falcon::Camera2D m_camera;
     Falcon::SpriteBatch m_actorSpriteBatch;
+    Falcon::SpriteBatch m_decalsSpriteBatch;
     Falcon::InputManager m_inputManager;
     Falcon::FPSLimiter m_FPSLimiter;
 
@@ -55,6 +57,9 @@ private:
     std::vector<Human*> m_humans;
     std::vector<Enemy*> m_enemies;
     std::vector<Bullet> m_bullets;
+    std::vector<Slash> m_slashes;
+    std::vector<Blood> m_bloodDecals;
+
     Player* m_player;
 
     float m_FPS;

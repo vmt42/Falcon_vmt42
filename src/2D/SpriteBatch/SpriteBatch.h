@@ -19,8 +19,29 @@ enum class GlyphSortType
 namespace Falcon
 {
 
-    struct Glyph
+    class Glyph
     {
+    public:
+        Glyph() {};
+        Glyph(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint Texture, float Depth, const Color &color)
+        : texture(Texture), depth(Depth)
+        {
+            topLeft.color = color;
+            topLeft.setPosition(destRect.x, destRect.y + destRect.w);
+            topLeft.setUV(uvRect.x, uvRect.y + uvRect.w);
+
+            bottomLeft.color = color;
+            bottomLeft.setPosition(destRect.x, destRect.y);
+            bottomLeft.setUV(uvRect.x, uvRect.y);
+
+            bottomRight.color = color;
+            bottomRight.setPosition(destRect.x + destRect.z , destRect.y);
+            bottomRight.setUV(uvRect.x + uvRect.z, uvRect.y);
+
+            topRight.color = color;
+            topRight.setPosition(destRect.x + destRect.z, destRect.y + destRect.w);
+            topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
+        }
         GLuint texture;
         float depth;
         Vertex topLeft;
@@ -58,13 +79,15 @@ namespace Falcon
         void createVertexArray();
         void sortGlyphs();
 
-        static bool cmpFTB(Glyph a, Glyph b);
-        static bool cmpBTF(Glyph a, Glyph b);
-        static bool cmpTXT(Glyph a, Glyph b);
+        static bool cmpFTB(Glyph* a, Glyph* b);
+        static bool cmpBTF(Glyph* a, Glyph* b);
+        static bool cmpTXT(Glyph* a, Glyph* b);
     private:
         GlyphSortType m_sortType;
         GLuint m_vbo; // Vertex buffer object
         GLuint m_vao; // Vertex array object
+
+        std::vector<Glyph*> m_glyphPtrs; // Vector for sorting
         std::vector<Glyph> m_glyphs;
         std::vector<RenderBatch> m_renderBatches;
     };

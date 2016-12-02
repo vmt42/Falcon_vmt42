@@ -12,45 +12,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7254700-7735-492c-9a8b-38fb1d6d73e1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/levels/lvl1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Actor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Actor.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Enemy.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Enemy.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Human.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Human.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Player.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Actor/Player.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Level/Level.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Level/Level.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bow.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bow.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bullet.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Weapon.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Weapon.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Object/Projectile.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Object/Projectile.h" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/GLSL/GLSLProgram.cpp.o" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Init/Game.cpp.o" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GLSL/GLSLProgram.cpp" afterPath="$PROJECT_DIR$/src/GLSL/ShaderProgram.cpp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GLSL/GLSLProgram.h" afterPath="$PROJECT_DIR$/src/GLSL/ShaderProgram.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/Camera/Camera2D.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/Camera/Camera2D.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/ImageLoader/ImageLoader.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/ImageLoader/ImageLoader.cpp.o" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Decals/Blood.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Decals/Blood.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Slash.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Game/Weapon/Slash.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Game/Weapon/Bow.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Game/Weapon/Bow.h" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/Sprite.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/SpriteBatch/SpriteBatch.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/2D/SpriteBatch/SpriteBatch.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Init/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/InputOutput/InputManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/ResourceManager/ResourceManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/ResourceManager/ResourceManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/ResourceManager/TextureCache.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/ResourceManager/TextureCache.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Timing/Timing.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Window/Window.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Window/Window.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Actor.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Human.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Game.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Game/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/src/Object/Projectile.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/FalconLatinum" afterPath="$PROJECT_DIR$/cmake-build-debug/FalconLatinum" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt.user" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/DependInfo.cmake" />
@@ -60,24 +48,30 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/depend.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/link.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/FalconLatinum.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/FalconLatinum.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/FalconLatinum.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/2D/Camera/Camera2D.cpp" afterPath="$PROJECT_DIR$/src/2D/Camera/Camera2D.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/2D/Camera/Camera2D.h" afterPath="$PROJECT_DIR$/src/2D/Camera/Camera2D.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/levels/lvl1.txt" afterPath="$PROJECT_DIR$/levels/lvl1.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp" afterPath="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Init/Game.cpp" afterPath="$PROJECT_DIR$/src/Init/Game.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Init/Game.h" afterPath="$PROJECT_DIR$/src/Init/Game.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InputOutput/InputManager.cpp" afterPath="$PROJECT_DIR$/src/InputOutput/InputManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InputOutput/InputManager.h" afterPath="$PROJECT_DIR$/src/InputOutput/InputManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ResourceManager/ResourceManager.cpp" afterPath="$PROJECT_DIR$/src/ResourceManager/ResourceManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ResourceManager/ResourceManager.h" afterPath="$PROJECT_DIR$/src/ResourceManager/ResourceManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ResourceManager/TextureCache.cpp" afterPath="$PROJECT_DIR$/src/ResourceManager/TextureCache.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shaders/colorShading.frag" afterPath="$PROJECT_DIR$/src/Shaders/colorShading.frag" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Window/Window.cpp" afterPath="$PROJECT_DIR$/src/Window/Window.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.h" afterPath="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/2D/Vertex.h" afterPath="$PROJECT_DIR$/src/2D/Vertex.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Actor.cpp" afterPath="$PROJECT_DIR$/src/Game/Actor/Actor.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Actor.h" afterPath="$PROJECT_DIR$/src/Game/Actor/Actor.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Enemy.cpp" afterPath="$PROJECT_DIR$/src/Game/Actor/Enemy.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Enemy.h" afterPath="$PROJECT_DIR$/src/Game/Actor/Enemy.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Human.cpp" afterPath="$PROJECT_DIR$/src/Game/Actor/Human.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Human.h" afterPath="$PROJECT_DIR$/src/Game/Actor/Human.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Player.cpp" afterPath="$PROJECT_DIR$/src/Game/Actor/Player.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Actor/Player.h" afterPath="$PROJECT_DIR$/src/Game/Actor/Player.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Game.cpp" afterPath="$PROJECT_DIR$/src/Game/Game.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Game.h" afterPath="$PROJECT_DIR$/src/Game/Game.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Level/Level.cpp" afterPath="$PROJECT_DIR$/src/Game/Level/Level.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Weapon/Bullet.h" afterPath="$PROJECT_DIR$/src/Game/Weapon/Bullet.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp" afterPath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h" afterPath="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game/Weapon/Weapon.h" afterPath="$PROJECT_DIR$/src/Game/Weapon/Weapon.h" />
     </list>
     <ignored path="FalconLatinum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,11 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Game.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game/Game.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+            <state relative-caret-position="457">
+              <caret line="230" column="72" lean-forward="false" selection-start-line="230" selection-start-column="72" selection-end-line="230" selection-end-column="72" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -109,13 +103,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp">
+      <file leaf-file-name="Slash.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Slash.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="408">
+              <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -124,23 +118,9 @@
       <file leaf-file-name="Bullet.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-              <folding>
-                <element signature="e#64#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-              <folding>
-                <element signature="e#64#82#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,32 +128,28 @@
       <file leaf-file-name="Game.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Game.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-              <folding>
-                <element signature="e#58#75#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="686">
+              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.cpp">
+      <file leaf-file-name="Actor.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Actor/Actor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="646">
+              <caret line="103" column="23" lean-forward="false" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RangeWeapon.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RangeWeapon.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="32" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -181,36 +157,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RangeWeapon.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h">
+      <file leaf-file-name="Slash.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Slash.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="85" lean-forward="false" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
+            <state relative-caret-position="255">
+              <caret line="15" column="90" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="90" />
               <folding>
-                <element signature="e#74#97#0" expanded="true" />
+                <element signature="e#62#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Weapon.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.h">
+      <file leaf-file-name="Bullet.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding>
-                <element signature="e#64#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Weapon.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -233,6 +209,10 @@
       <find>16</find>
       <find>i</find>
       <find>j</find>
+      <find>newGlyph.</find>
+      <find>m_gl</find>
+      <find>m_glyphs</find>
+      <find>.</find>
     </findStrings>
     <replaceStrings>
       <replace>ShaderProgram</replace>
@@ -240,6 +220,8 @@
       <replace>TILE_WIDTH</replace>
       <replace>y</replace>
       <replace>x</replace>
+      <replace>m_glyphPtrs</replace>
+      <replace>-&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -248,14 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Timing/Timing.cpp" />
-        <option value="$PROJECT_DIR$/src/InputOutput/InputManager.h" />
-        <option value="$PROJECT_DIR$/src/InputOutput/InputManager.cpp" />
-        <option value="$PROJECT_DIR$/src/GLSL/ShaderProgram.h" />
-        <option value="$PROJECT_DIR$/src/GLSL/ShaderProgram.cpp" />
-        <option value="$PROJECT_DIR$/src/Object/Projectile.cpp" />
-        <option value="$PROJECT_DIR$/src/Object/Projectile.h" />
-        <option value="$PROJECT_DIR$/src/Actor/Actor.h" />
         <option value="$PROJECT_DIR$/src/Actor/Human.h" />
         <option value="$PROJECT_DIR$/src/Actor/Enemy.h" />
         <option value="$PROJECT_DIR$/src/Actor/Actor.cpp" />
@@ -264,8 +238,6 @@
         <option value="$PROJECT_DIR$/src/Actor/Player.h" />
         <option value="$PROJECT_DIR$/src/Level/Level.h" />
         <option value="$PROJECT_DIR$/src/Level/Level.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/Game/main.cpp" />
         <option value="$PROJECT_DIR$/src/Window/Window.cpp" />
         <option value="$PROJECT_DIR$/src/ResourceManager/ResourceManager.cpp" />
         <option value="$PROJECT_DIR$/src/ResourceManager/ResourceManager.h" />
@@ -276,29 +248,39 @@
         <option value="$PROJECT_DIR$/src/2D/Camera/Camera2D.h" />
         <option value="$PROJECT_DIR$/src/2D/Camera/Camera2D.cpp" />
         <option value="$PROJECT_DIR$/src/2D/Sprite.cpp" />
-        <option value="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp" />
-        <option value="$PROJECT_DIR$/levels/lvl1.txt" />
-        <option value="$PROJECT_DIR$/src/Game/Level/Level.cpp" />
         <option value="$PROJECT_DIR$/src/Game/Level/Level.h" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Human.h" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Actor.h" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Human.cpp" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Actor.cpp" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Enemy.h" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Enemy.cpp" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Bow.cpp" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Bow.h" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Weapon.cpp" />
+        <option value="$PROJECT_DIR$/src/Init/Game.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Level/Level.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/2D/Vertex.h" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Actor.h" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Enemy.h" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Human.h" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Bullet.h" />
+        <option value="$PROJECT_DIR$/levels/lvl1.txt" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Actor.cpp" />
+        <option value="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp" />
+        <option value="$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.h" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Enemy.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Human.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Decals/Blood.h" />
+        <option value="$PROJECT_DIR$/src/Game/Decals/Blood.cpp" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/Weapon.h" />
         <option value="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h" />
-        <option value="$PROJECT_DIR$/src/Game/Game.h" />
-        <option value="$PROJECT_DIR$/src/Init/Game.cpp" />
         <option value="$PROJECT_DIR$/src/Game/Actor/Player.h" />
-        <option value="$PROJECT_DIR$/src/Game/Actor/Player.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Game.h" />
+        <option value="$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.h" />
+        <option value="$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Weapon/Slash.h" />
         <option value="$PROJECT_DIR$/src/Game/Game.cpp" />
-        <option value="$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Weapon/Slash.cpp" />
+        <option value="$PROJECT_DIR$/src/Game/Actor/Player.cpp" />
       </list>
     </option>
   </component>
@@ -373,46 +355,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Window" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Timing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="States" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -446,79 +388,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ResourceManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Object" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InputOutput" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FalconLatinum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GLSL" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,7 +450,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Actor" />
+              <option name="myItemId" value="Level" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -595,6 +465,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Decals" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FalconLatinum" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FalconLatinum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Actor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,7 +612,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hexxagon" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
@@ -722,6 +622,9 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="FalconLatinum" TARGET_NAME="FalconLatinum" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
@@ -731,6 +634,12 @@
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
@@ -943,12 +852,16 @@
       <workItem from="1480277548071" duration="2419000" />
       <workItem from="1480504538061" duration="11810000" />
       <workItem from="1480526250350" duration="14608000" />
-      <workItem from="1480592559491" duration="10449000" />
+      <workItem from="1480592559491" duration="11033000" />
+      <workItem from="1480624950987" duration="570000" />
+      <workItem from="1480625550004" duration="5242000" />
+      <workItem from="1480671019475" duration="17315000" />
+      <workItem from="1480698799165" duration="3186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119981000" />
+    <option name="totallyTimeSpent" value="146878000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -964,23 +877,23 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16725476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.49752998" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36849132" sideWeight="0.3154552" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.49752998" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37116155" sideWeight="0.3027523" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36849132" sideWeight="0.5109386" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36849132" sideWeight="0.6845448" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37116155" sideWeight="0.6972477" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3965287" sideWeight="0.45236415" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3965287" sideWeight="0.42484123" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.49752998" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977304" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1000,114 +913,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/InputOutput/InputManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="25" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GLSL/ShaderProgram.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="125" column="23" lean-forward="false" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GLSL/ShaderProgram.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Init/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#17#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding>
-            <marker date="1480515657038" expanded="true" signature="51:100" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResourceManager/TextureCache.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResourceManager/ResourceManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResourceManager/ResourceManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/2D/Vertex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Init/Game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="153" lean-forward="false" selection-start-line="23" selection-start-column="108" selection-end-line="23" selection-end-column="153" />
-          <folding>
-            <element signature="e#59#76#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shaders/colorShading.vert">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shaders/colorShading.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Window/Window.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1123,27 +933,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Object/Projectile.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Object/Projectile.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/2D/Camera/Camera2D.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,49 +966,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/Textures/human.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="56" column="78" lean-forward="false" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
-        </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/5/bits/uniform_int_dist.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="220" column="27" lean-forward="false" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/levels/lvl1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Level/Level.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1223,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="100" column="32" lean-forward="false" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,104 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="389" column="32" lean-forward="false" selection-start-line="389" selection-start-column="32" selection-end-line="389" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Level/Level.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#62#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Enemy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <marker date="1480596847798" expanded="true" signature="504:555" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Enemy.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Actor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Actor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Human.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Human.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#64#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="85" lean-forward="false" selection-start-line="18" selection-start-column="85" selection-end-line="18" selection-end-column="85" />
-          <folding>
-            <element signature="e#74#97#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1348,28 +1007,226 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.cpp">
+    <entry file="file://$PROJECT_DIR$/src/GLSL/ShaderProgram.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="482">
+          <caret line="125" column="76" lean-forward="true" selection-start-line="125" selection-start-column="76" selection-end-line="125" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Game.h">
+    <entry file="file://$PROJECT_DIR$/src/Game/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2D/Vertex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/levels/lvl1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="45" column="47" lean-forward="false" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/predefined_ops.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bow.h" />
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bow.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/Game/Level/Level.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Level/Level.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Enemy.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="129" lean-forward="false" selection-start-line="13" selection-start-column="129" selection-end-line="13" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Human.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Enemy.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="88" lean-forward="false" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="88" />
           <folding>
-            <element signature="e#58#75#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1480685300463" expanded="true" signature="164:287" ph="{...}" />
+            <marker date="1480685300463" expanded="true" signature="340:900" ph="{...}" />
+            <marker date="1480685300463" expanded="true" signature="1036:1309" ph="{...}" />
+            <marker date="1480685300463" expanded="true" signature="1370:1751" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Game.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Human.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+        <state relative-caret-position="261">
+          <caret line="54" column="88" lean-forward="false" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+            <marker date="1480685399314" expanded="true" signature="222:606" ph="{...}" />
+            <marker date="1480685399314" expanded="true" signature="742:1230" ph="{...}" />
+            <marker date="1480685399314" expanded="true" signature="1283:1869" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2D/Camera/Camera2D.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="68" lean-forward="false" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="83" column="47" lean-forward="false" selection-start-line="83" selection-start-column="47" selection-end-line="83" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Decals/Blood.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="144" lean-forward="false" selection-start-line="11" selection-start-column="144" selection-end-line="11" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Decals/Blood.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" lean-forward="false" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Weapon.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2D/SpriteBatch/SpriteBatch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="148" column="5" lean-forward="false" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Actor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Object/Projectile.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="110" lean-forward="false" selection-start-line="15" selection-start-column="110" selection-end-line="15" selection-end-column="110" />
+          <folding>
+            <element signature="e#74#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/MeleeWeapon.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="32" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -1378,48 +1235,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="204">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Actor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="103" column="23" lean-forward="false" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="686">
+          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/glm/detail/type_vec2.inl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="548" column="5" lean-forward="true" selection-start-line="548" selection-start-column="5" selection-end-line="548" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Slash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="90" lean-forward="false" selection-start-line="15" selection-start-column="89" selection-end-line="15" selection-end-column="90" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#62#107#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.h">
+    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Slash.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="408">
+          <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
           <folding>
-            <element signature="e#64#82#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Actor/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="546">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/Bullet.h">
+    <entry file="file://$PROJECT_DIR$/src/Game/Game.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding>
-            <element signature="e#64#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Weapon/RangeWeapon.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="457">
+          <caret line="230" column="72" lean-forward="false" selection-start-line="230" selection-start-column="72" selection-end-line="230" selection-end-column="72" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

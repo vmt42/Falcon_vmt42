@@ -420,6 +420,33 @@ src/Game/Actor/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.s
 .PHONY : src/Game/Actor/Player.cpp.s
 
+src/Game/Decals/Blood.o: src/Game/Decals/Blood.cpp.o
+
+.PHONY : src/Game/Decals/Blood.o
+
+# target to build an object file
+src/Game/Decals/Blood.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o
+.PHONY : src/Game/Decals/Blood.cpp.o
+
+src/Game/Decals/Blood.i: src/Game/Decals/Blood.cpp.i
+
+.PHONY : src/Game/Decals/Blood.i
+
+# target to preprocess a source file
+src/Game/Decals/Blood.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.i
+.PHONY : src/Game/Decals/Blood.cpp.i
+
+src/Game/Decals/Blood.s: src/Game/Decals/Blood.cpp.s
+
+.PHONY : src/Game/Decals/Blood.s
+
+# target to generate assembly for a file
+src/Game/Decals/Blood.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.s
+.PHONY : src/Game/Decals/Blood.cpp.s
+
 src/Game/Game.o: src/Game/Game.cpp.o
 
 .PHONY : src/Game/Game.o
@@ -474,33 +501,6 @@ src/Game/Level/Level.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.s
 .PHONY : src/Game/Level/Level.cpp.s
 
-src/Game/Weapon/Bow.o: src/Game/Weapon/Bow.cpp.o
-
-.PHONY : src/Game/Weapon/Bow.o
-
-# target to build an object file
-src/Game/Weapon/Bow.cpp.o:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o
-.PHONY : src/Game/Weapon/Bow.cpp.o
-
-src/Game/Weapon/Bow.i: src/Game/Weapon/Bow.cpp.i
-
-.PHONY : src/Game/Weapon/Bow.i
-
-# target to preprocess a source file
-src/Game/Weapon/Bow.cpp.i:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.i
-.PHONY : src/Game/Weapon/Bow.cpp.i
-
-src/Game/Weapon/Bow.s: src/Game/Weapon/Bow.cpp.s
-
-.PHONY : src/Game/Weapon/Bow.s
-
-# target to generate assembly for a file
-src/Game/Weapon/Bow.cpp.s:
-	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.s
-.PHONY : src/Game/Weapon/Bow.cpp.s
-
 src/Game/Weapon/Bullet.o: src/Game/Weapon/Bullet.cpp.o
 
 .PHONY : src/Game/Weapon/Bullet.o
@@ -528,6 +528,33 @@ src/Game/Weapon/Bullet.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.s
 .PHONY : src/Game/Weapon/Bullet.cpp.s
 
+src/Game/Weapon/MeleeWeapon.o: src/Game/Weapon/MeleeWeapon.cpp.o
+
+.PHONY : src/Game/Weapon/MeleeWeapon.o
+
+# target to build an object file
+src/Game/Weapon/MeleeWeapon.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o
+.PHONY : src/Game/Weapon/MeleeWeapon.cpp.o
+
+src/Game/Weapon/MeleeWeapon.i: src/Game/Weapon/MeleeWeapon.cpp.i
+
+.PHONY : src/Game/Weapon/MeleeWeapon.i
+
+# target to preprocess a source file
+src/Game/Weapon/MeleeWeapon.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.i
+.PHONY : src/Game/Weapon/MeleeWeapon.cpp.i
+
+src/Game/Weapon/MeleeWeapon.s: src/Game/Weapon/MeleeWeapon.cpp.s
+
+.PHONY : src/Game/Weapon/MeleeWeapon.s
+
+# target to generate assembly for a file
+src/Game/Weapon/MeleeWeapon.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.s
+.PHONY : src/Game/Weapon/MeleeWeapon.cpp.s
+
 src/Game/Weapon/RangeWeapon.o: src/Game/Weapon/RangeWeapon.cpp.o
 
 .PHONY : src/Game/Weapon/RangeWeapon.o
@@ -554,6 +581,33 @@ src/Game/Weapon/RangeWeapon.s: src/Game/Weapon/RangeWeapon.cpp.s
 src/Game/Weapon/RangeWeapon.cpp.s:
 	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.s
 .PHONY : src/Game/Weapon/RangeWeapon.cpp.s
+
+src/Game/Weapon/Slash.o: src/Game/Weapon/Slash.cpp.o
+
+.PHONY : src/Game/Weapon/Slash.o
+
+# target to build an object file
+src/Game/Weapon/Slash.cpp.o:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o
+.PHONY : src/Game/Weapon/Slash.cpp.o
+
+src/Game/Weapon/Slash.i: src/Game/Weapon/Slash.cpp.i
+
+.PHONY : src/Game/Weapon/Slash.i
+
+# target to preprocess a source file
+src/Game/Weapon/Slash.cpp.i:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.i
+.PHONY : src/Game/Weapon/Slash.cpp.i
+
+src/Game/Weapon/Slash.s: src/Game/Weapon/Slash.cpp.s
+
+.PHONY : src/Game/Weapon/Slash.s
+
+# target to generate assembly for a file
+src/Game/Weapon/Slash.cpp.s:
+	$(MAKE) -f CMakeFiles/FalconLatinum.dir/build.make CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.s
+.PHONY : src/Game/Weapon/Slash.cpp.s
 
 src/Game/Weapon/Weapon.o: src/Game/Weapon/Weapon.cpp.o
 
@@ -894,21 +948,27 @@ help:
 	@echo "... src/Game/Actor/Player.o"
 	@echo "... src/Game/Actor/Player.i"
 	@echo "... src/Game/Actor/Player.s"
+	@echo "... src/Game/Decals/Blood.o"
+	@echo "... src/Game/Decals/Blood.i"
+	@echo "... src/Game/Decals/Blood.s"
 	@echo "... src/Game/Game.o"
 	@echo "... src/Game/Game.i"
 	@echo "... src/Game/Game.s"
 	@echo "... src/Game/Level/Level.o"
 	@echo "... src/Game/Level/Level.i"
 	@echo "... src/Game/Level/Level.s"
-	@echo "... src/Game/Weapon/Bow.o"
-	@echo "... src/Game/Weapon/Bow.i"
-	@echo "... src/Game/Weapon/Bow.s"
 	@echo "... src/Game/Weapon/Bullet.o"
 	@echo "... src/Game/Weapon/Bullet.i"
 	@echo "... src/Game/Weapon/Bullet.s"
+	@echo "... src/Game/Weapon/MeleeWeapon.o"
+	@echo "... src/Game/Weapon/MeleeWeapon.i"
+	@echo "... src/Game/Weapon/MeleeWeapon.s"
 	@echo "... src/Game/Weapon/RangeWeapon.o"
 	@echo "... src/Game/Weapon/RangeWeapon.i"
 	@echo "... src/Game/Weapon/RangeWeapon.s"
+	@echo "... src/Game/Weapon/Slash.o"
+	@echo "... src/Game/Weapon/Slash.i"
+	@echo "... src/Game/Weapon/Slash.s"
 	@echo "... src/Game/Weapon/Weapon.o"
 	@echo "... src/Game/Weapon/Weapon.i"
 	@echo "... src/Game/Weapon/Weapon.s"

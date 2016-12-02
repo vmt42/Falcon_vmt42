@@ -145,6 +145,8 @@ Enemy.h
 /home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
 Human.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.h
+../Level/Level.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.h
 Actor.h
@@ -159,6 +161,8 @@ Human.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.h
 ../../ResourceManager/ResourceManager.h
 /home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
+../Level/Level.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.h
 Actor.h
@@ -171,6 +175,10 @@ Player.h
 /home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
 ../Weapon/RangeWeapon.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.h
+../Weapon/MeleeWeapon.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/MeleeWeapon.h
+../Level/Level.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Player.h
 Human.h
@@ -181,6 +189,22 @@ Human.h
 /home/andrewshipilo/Projects/FalconLatinum/src/2D/Camera/Camera2D.h
 ../Weapon/Bullet.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h
+../Weapon/Slash.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Slash.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Decals/Blood.cpp
+Blood.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Decals/Blood.h
+../Level/Level.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Decals/Blood.h
+glm/vec2.hpp
+-
+../../2D/SpriteBatch/SpriteBatch.h
+/home/andrewshipilo/Projects/FalconLatinum/src/2D/SpriteBatch/SpriteBatch.h
+../../ResourceManager/ResourceManager.h
+/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.cpp
 Game.h
@@ -197,6 +221,8 @@ random
 /home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
 Weapon/RangeWeapon.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.h
+Weapon/MeleeWeapon.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/MeleeWeapon.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Game.h
 vector
@@ -235,6 +261,8 @@ Actor/Enemy.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.h
 Weapon/Bullet.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h
+Decals/Blood.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Decals/Blood.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.cpp
 Level.h
@@ -258,25 +286,39 @@ string
 ../../2D/SpriteBatch/SpriteBatch.h
 /home/andrewshipilo/Projects/FalconLatinum/src/2D/SpriteBatch/SpriteBatch.h
 
-/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.cpp
-Bow.h
-/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.h
-
-/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bow.h
-Weapon.h
-/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.h
-
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.cpp
 Bullet.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h
+../Actor/Actor.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.h
+../Actor/Human.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Human.h
+../Actor/Enemy.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.h
 ../../ResourceManager/ResourceManager.h
 /home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
+../Level/Level.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Level/Level.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h
 glm/vec2.hpp
 -
 ../Actor/Enemy.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Enemy.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/MeleeWeapon.cpp
+glm/gtx/rotate_vector.hpp
+-
+random
+-
+MeleeWeapon.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/MeleeWeapon.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/MeleeWeapon.h
+Weapon.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.h
+Slash.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Slash.h
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/RangeWeapon.cpp
 random
@@ -295,6 +337,20 @@ Weapon.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.h
 Bullet.h
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Bullet.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Slash.cpp
+Slash.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Slash.h
+../../ResourceManager/ResourceManager.h
+/home/andrewshipilo/Projects/FalconLatinum/src/ResourceManager/ResourceManager.h
+
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Slash.h
+../../2D/SpriteBatch/SpriteBatch.h
+/home/andrewshipilo/Projects/FalconLatinum/src/2D/SpriteBatch/SpriteBatch.h
+../Actor/Actor.h
+/home/andrewshipilo/Projects/FalconLatinum/src/Game/Actor/Actor.h
+string
+-
 
 /home/andrewshipilo/Projects/FalconLatinum/src/Game/Weapon/Weapon.cpp
 Weapon.h

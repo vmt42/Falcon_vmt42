@@ -22,10 +22,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/FalconLatinum.dir/src/Game/Actor/Enemy.cpp.o"
   "CMakeFiles/FalconLatinum.dir/src/Game/Level/Level.cpp.o"
   "CMakeFiles/FalconLatinum.dir/src/Game/Actor/Player.cpp.o"
-  "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bow.cpp.o"
   "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Weapon.cpp.o"
   "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/RangeWeapon.cpp.o"
   "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Bullet.cpp.o"
+  "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/MeleeWeapon.cpp.o"
+  "CMakeFiles/FalconLatinum.dir/src/Game/Weapon/Slash.cpp.o"
+  "CMakeFiles/FalconLatinum.dir/src/Game/Decals/Blood.cpp.o"
   "FalconLatinum.pdb"
   "FalconLatinum"
 )

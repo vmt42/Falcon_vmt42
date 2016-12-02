@@ -7,14 +7,15 @@
 class Enemy : public Actor
 {
 public:
-    Enemy() {};
+    Enemy(glm::vec2 position, float speed);
     ~Enemy() {};
-    void init(glm::vec2 position, float speed);
-    void draw(Falcon::SpriteBatch& spriteBatch) override;
-    void update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies) override;
-private:
 
+    void draw(Falcon::SpriteBatch& spriteBatch) override;
+    void update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies, float deltaTime) override;
+
+private:
     Human* getNearestHuman(std::vector<Human*>& humans);
+
 };
 
 

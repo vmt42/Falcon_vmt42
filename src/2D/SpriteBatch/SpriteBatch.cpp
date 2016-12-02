@@ -6,28 +6,7 @@ namespace Falcon
 
     void SpriteBatch::draw(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint texture, float depth, const Color &color)
     {
-        Glyph newGlyph;
-        newGlyph.texture = texture;
-        newGlyph.depth = depth;
-
-        newGlyph.topLeft.color = color;
-        newGlyph.topLeft.setPosition(destRect.x, destRect.y + destRect.w);
-        newGlyph.topLeft.setUV(uvRect.x, uvRect.y + uvRect.w);
-
-        newGlyph.bottomLeft.color = color;
-        newGlyph.bottomLeft.setPosition(destRect.x, destRect.y);
-        newGlyph.bottomLeft.setUV(uvRect.x, uvRect.y);
-
-        newGlyph.bottomRight.color = color;
-        newGlyph.bottomRight.setPosition(destRect.x + destRect.z , destRect.y);
-        newGlyph.bottomRight.setUV(uvRect.x + uvRect.z, uvRect.y);
-
-        newGlyph.topRight.color = color;
-        newGlyph.topRight.setPosition(destRect.x + destRect.z, destRect.y + destRect.w);
-        newGlyph.topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
-
-        m_glyphs.push_back(newGlyph);
-
+        m_glyphs.emplace_back(destRect, uvRect, texture, depth, color);
     }
 
     void SpriteBatch::init()
@@ -44,6 +23,12 @@ namespace Falcon
 
     void SpriteBatch::end()
     {
+        m_glyphPtrs.resize(m_glyphs.size());
+        for (int i = 0; i < m_glyphs.size(); i++)
+        {
+            m_glyphPtrs[i] = &m_glyphs[i];
+        }
+
         sortGlyphs();
         createRenderBatches();
     }
@@ -63,36 +48,36 @@ namespace Falcon
     void SpriteBatch::createRenderBatches()
     {
         std::vector<Vertex> vertices;
-        vertices.resize(m_glyphs.size() * 6);
-        if (m_glyphs.empty())
+        vertices.resize(m_glyphPtrs.size() * 6);
+        if (m_glyphPtrs.empty())
             return;
 
 
         int offset = 0;
 
-        m_renderBatches.emplace_back(offset, 6, m_glyphs[0].texture);
+        m_renderBatches.emplace_back(offset, 6, m_glyphPtrs[0]->texture);
         int cV = 0; // Current vertex
-        vertices[cV++] = m_glyphs[0].topLeft;
-        vertices[cV++] = m_glyphs[0].bottomLeft;
-        vertices[cV++] = m_glyphs[0].bottomRight;
-        vertices[cV++] = m_glyphs[0].bottomRight;
-        vertices[cV++] = m_glyphs[0].topRight;
-        vertices[cV++] = m_glyphs[0].topLeft;
+        vertices[cV++] = m_glyphPtrs[0]->topLeft;
+        vertices[cV++] = m_glyphPtrs[0]->bottomLeft;
+        vertices[cV++] = m_glyphPtrs[0]->bottomRight;
+        vertices[cV++] = m_glyphPtrs[0]->bottomRight;
+        vertices[cV++] = m_glyphPtrs[0]->topRight;
+        vertices[cV++] = m_glyphPtrs[0]->topLeft;
         offset += 6;
 
-        for (int cg = 1; cg < m_glyphs.size(); cg++)
+        for (int cg = 1; cg < m_glyphPtrs.size(); cg++)
         {
-            if (m_glyphs[cg].texture != m_glyphs[cg - 1].texture)
-                m_renderBatches.emplace_back(offset, 6, m_glyphs[cg].texture);
+            if (m_glyphPtrs[cg]->texture != m_glyphPtrs[cg - 1]->texture)
+                m_renderBatches.emplace_back(offset, 6, m_glyphPtrs[cg]->texture);
             else
                 m_renderBatches.back().numVertices += 6;
 
-            vertices[cV++] = m_glyphs[cg].topLeft;
-            vertices[cV++] = m_glyphs[cg].bottomLeft;
-            vertices[cV++] = m_glyphs[cg].bottomRight;
-            vertices[cV++] = m_glyphs[cg].bottomRight;
-            vertices[cV++] = m_glyphs[cg].topRight;
-            vertices[cV++] = m_glyphs[cg].topLeft;
+            vertices[cV++] = m_glyphPtrs[cg]->topLeft;
+            vertices[cV++] = m_glyphPtrs[cg]->bottomLeft;
+            vertices[cV++] = m_glyphPtrs[cg]->bottomRight;
+            vertices[cV++] = m_glyphPtrs[cg]->bottomRight;
+            vertices[cV++] = m_glyphPtrs[cg]->topRight;
+            vertices[cV++] = m_glyphPtrs[cg]->topLeft;
             offset += 6;
         }
 
@@ -138,31 +123,31 @@ namespace Falcon
         switch (m_sortType)
         {
             case GlyphSortType::BACK_TO_FRONT:
-                std::stable_sort(m_glyphs.begin(), m_glyphs.end(), cmpBTF);
+                std::stable_sort(m_glyphPtrs.begin(), m_glyphPtrs.end(), cmpBTF);
                 break;
             case GlyphSortType::FRONT_TO_BACK:
-                std::stable_sort(m_glyphs.begin(), m_glyphs.end(), cmpFTB);
+                std::stable_sort(m_glyphPtrs.begin(), m_glyphPtrs.end(), cmpFTB);
                 break;
             case GlyphSortType::TEXTURE:
-                std::stable_sort(m_glyphs.begin(), m_glyphs.end(), cmpTXT);
+                std::stable_sort(m_glyphPtrs.begin(), m_glyphPtrs.end(), cmpTXT);
                 break;
         }
 
     }
 
-    bool SpriteBatch::cmpFTB(Glyph a, Glyph b)
+    bool SpriteBatch::cmpFTB(Glyph* a, Glyph* b)
     {
-        return (a.depth < b.depth);
+        return (a->depth < b->depth);
     }
 
-    bool SpriteBatch::cmpBTF(Glyph a, Glyph b)
+    bool SpriteBatch::cmpBTF(Glyph* a, Glyph* b)
     {
-        return (a.depth > b.depth);
+        return (a->depth > b->depth);
     }
 
-    bool SpriteBatch::cmpTXT(Glyph a, Glyph b)
+    bool SpriteBatch::cmpTXT(Glyph* a, Glyph* b)
     {
-        return (a.texture < b.texture);
+        return (a->texture < b->texture);
     }
 
 

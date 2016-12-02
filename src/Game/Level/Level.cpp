@@ -21,6 +21,8 @@ Level::Level(const std::string &filePath)
     {
         m_level.push_back(empty);
     }
+
+    init();
 }
 
 void Level::init()
