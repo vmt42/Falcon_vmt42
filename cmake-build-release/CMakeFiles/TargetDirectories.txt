@@ -1,3 +1,0 @@
-/home/andrewshipilo/Projects/FalconLatinum/cmake-build-release/CMakeFiles/edit_cache.dir
-/home/andrewshipilo/Projects/FalconLatinum/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/home/andrewshipilo/Projects/FalconLatinum/cmake-build-release/CMakeFiles/FalconLatinum.dir
