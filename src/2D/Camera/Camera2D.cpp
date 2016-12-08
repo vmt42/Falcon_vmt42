@@ -39,5 +39,32 @@ namespace Falcon
         return screenCoords;
     }
 
+    bool Camera2D::isBoxVisible(const glm::vec2 &position, const glm::vec2 &dimensions)
+    {
+        glm::vec2 scaledScreen = glm::vec2(m_screenWidth, m_screenHeight) / m_scale;
+
+        const float MIN_DISTANCE_X = dimensions.x / 2.0f + scaledScreen.x / 2.0f;
+        const float MIN_DISTANCE_Y = dimensions.y / 2.0f + scaledScreen.y / 2.0f;
+
+        //Input position
+        glm::vec2 centerPos = position + dimensions / 2.0f;
+        glm::vec2 centerCameraPos = m_position;
+
+        //Vector from input to the camera
+        glm::vec2 distVec = centerPos - centerCameraPos ;
+
+        float x_depth = MIN_DISTANCE_X - abs(distVec.x);
+        float y_depth = MIN_DISTANCE_Y - abs(distVec.y);
+
+
+        if (x_depth > 0 && y_depth > 0)
+        {
+            // Was a collision
+            return true;
+        }
+
+        return false;
+    }
+
 
 }

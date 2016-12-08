@@ -29,6 +29,9 @@ void Game::run()
 {
     initSystems();
     initLevel();
+
+    Falcon::Music music = m_audioEngine.loadMusic("media/Sounds/mystic_theme.mp3");
+    music.play(-1);
     gameLoop();
 }
 
@@ -36,20 +39,27 @@ void Game::initSystems()
 {
     Falcon::init();
 
-    m_window.create("Simple Game", m_screenWidth, m_screenHeight, 0);
+    m_audioEngine.init();
+
+    m_window.create("EC0H", m_screenWidth, m_screenHeight, 0);
     initShaders();
     glewExperimental = GL_TRUE;
     glewInit();
 
     m_camera.init(m_screenWidth, m_screenHeight);
+    m_hudCamera.init(m_screenWidth, m_screenHeight);
+    m_hudCamera.setPosition(glm::vec2(m_screenWidth / 2, m_screenHeight / 2));
     m_actorSpriteBatch.init();
     m_decalsSpriteBatch.init();
     m_FPSLimiter.init(9999999999.0f);
+    m_uiSpriteBatch.init();
+    m_spriteFont = new Falcon::SpriteFont("media/Fonts/pixel_font.ttf", 12);
 }
 
 void Game::initLevel()
 {
     m_levels.emplace_back(new Level("levels/lvl1.txt"));
+    //m_levels.emplace_back(new Level("levels/test.lua"));
 
     m_player = new Player(m_levels[m_curLVL]->getPlayerStartPos(), 5.0f, &m_inputManager, &m_camera, &m_bullets, &m_slashes);
     m_humans.emplace_back(m_player);
@@ -59,7 +69,7 @@ void Game::initLevel()
     std::uniform_int_distribution<int> randomYPos(2, m_levels[m_curLVL]->getHeight() - 2);
 
 
-    for (auto i = 0; i < 100; i++)
+    for (auto i = 0; i < 200; i++)
     {
         glm::vec2 pos(randomXPos(RNG) * TILE_WIDTH, randomYPos(RNG) * TILE_HEIGHT);
         m_humans.emplace_back(new Human(pos, 0.5f));
@@ -75,9 +85,9 @@ void Game::initLevel()
         m_enemies.emplace_back(new Enemy(enemyStartPos, 1.0f));
     }
 
-    m_player->addRangeWeapon(new RangeWeapon(30, 30.0f, 20.0f, 1.0f, 10.0f));
-    m_player->addRangeWeapon(new RangeWeapon(60, 4.0f, 20.0f, 20.0f, 40.0f));
-    m_player->addRangeWeapon(new RangeWeapon(1, 4.0f, 20.0f, 1, 70));
+    m_player->addRangeWeapon(new RangeWeapon(10, 30.0f, 20.0f, 1.0f, 5.0f, m_audioEngine.loadSoundEffect("media/Sounds/shoot.ogg")));
+    m_player->addRangeWeapon(new RangeWeapon(60, 4.0f, 20.0f, 20.0f, 40.0f, m_audioEngine.loadSoundEffect("media/Sounds/shoot.ogg")));
+    m_player->addRangeWeapon(new RangeWeapon(1, 4.0f, 20.0f, 1, 20.0f, m_audioEngine.loadSoundEffect("media/Sounds/shoot.ogg")));
     m_player->addMeleeWeapon(new MeleeWeapon(20, 3.0f));
 }
 
@@ -146,6 +156,7 @@ void Game::gameLoop()
         m_camera.setPosition(m_player->getPosition());
 
         m_camera.update();
+        m_hudCamera.update();
 
         int i = 0;
         while (totalDeltaTime > 0.0f && i < MAX_LOGIC_STEPS)
@@ -162,7 +173,7 @@ void Game::gameLoop()
         draw();
 
         m_FPS = m_FPSLimiter.end();
-        std::cout << m_FPS << "\n";
+        //std::cout << m_FPS << "\n";
     }
 }
 
@@ -228,11 +239,13 @@ void Game::updateBullets(float deltaTime)
         {
             if (m_slashes[i].actorCollision(m_enemies[j]))
             {
+
                 m_bloodDecals.emplace_back(m_enemies[j]->getPosition());
                 if (m_enemies[j]->addDamage(m_slashes[i].getDamage()))
                 {
                     delete m_enemies[j];
                     m_enemies.erase(m_enemies.begin() + j);
+                    m_player->addPoints(10);
                 }
                 else
                 {
@@ -288,6 +301,7 @@ void Game::updateBullets(float deltaTime)
                 {
                     delete m_enemies[j];
                     m_enemies.erase(m_enemies.begin() + j);
+                    m_player->addPoints(10);
                 }
                 else
                 {
@@ -322,7 +336,6 @@ void Game::draw()
     // Set camera matrix
     GLint pLocation = m_shaderProgram.getUniformLocation("P");
     glm::mat4 cameraMatrix = m_camera.getCameraMatrix();
-
     glUniformMatrix4fv(pLocation, 1, GL_FALSE, &(cameraMatrix[0][0]));
 
     //Draw level
@@ -339,21 +352,30 @@ void Game::draw()
 
     //Begin drawing actors
     m_actorSpriteBatch.begin();
+    const glm::vec2 agentDims(ACTOR_RADIUS * 2);
 
     for (auto &human : m_humans)
     {
-        human->draw(m_actorSpriteBatch);
+        if (m_camera.isBoxVisible(human->getPosition(), agentDims))
+        {
+            human->draw(m_actorSpriteBatch);
+        }
+
     }
 
     for (auto &enemy : m_enemies)
     {
-        enemy->draw(m_actorSpriteBatch);
+        if (m_camera.isBoxVisible(enemy->getPosition(), agentDims))
+        {
+            enemy->draw(m_actorSpriteBatch);
+        }
     }
 
     for (auto& bullet : m_bullets)
     {
         bullet.draw(m_actorSpriteBatch);
     }
+
     for (auto& slash : m_slashes)
     {
         slash.draw(m_actorSpriteBatch);
@@ -362,9 +384,29 @@ void Game::draw()
     m_actorSpriteBatch.end();
     m_actorSpriteBatch.renderBatch();
 
+    drawHUD();
     m_shaderProgram.use();
     m_window.swapBuffer(); // Swap buffer
 
+}
+
+void Game::drawHUD()
+{
+    char buffer[256];
+    // Set camera matrix
+    GLint pLocation = m_shaderProgram.getUniformLocation("P");
+    glm::mat4 cameraMatrix = m_hudCamera.getCameraMatrix();
+    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &(cameraMatrix[0][0]));
+    m_uiSpriteBatch.begin();
+
+    sprintf(buffer, "POINTS: %d", m_player->getPoints());
+    m_spriteFont->draw(m_uiSpriteBatch, buffer, glm::vec2(0, 0),
+                       glm::vec2(2.0f), 0.0f, Falcon::Color(255, 255, 255, 255));
+    m_spriteFont->draw(m_uiSpriteBatch, std::to_string(m_FPS).c_str(), glm::vec2(0, m_screenHeight - 32),
+                       glm::vec2(2.0f), 0.0f, Falcon::Color(255, 255, 255, 255));
+
+    m_uiSpriteBatch.end();
+    m_uiSpriteBatch.renderBatch();
 }
 
 

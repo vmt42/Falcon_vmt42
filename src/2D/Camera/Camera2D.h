@@ -23,6 +23,7 @@ namespace Falcon
         glm::vec2 getPosition() { return m_position; };
         float getScale() { return m_scale; };
         glm::mat4 getCameraMatrix() { return m_cameraMatrix; };
+        bool isBoxVisible(const glm::vec2 &position, const glm::vec2 &dimensions);
 
     private:
         int m_screenWidth, m_screenHeight;

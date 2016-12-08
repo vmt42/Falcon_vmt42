@@ -18,6 +18,7 @@ void RangeWeapon::fire(const glm::vec2 position, const glm::vec2 direction, std:
     static std::mt19937 RNG;
     static std::uniform_real_distribution<float> randomRotate(-m_spread * 3.14159265359f / 180, m_spread * 3.14159265359f / 180);
 
+    m_fire.play();
     for (int i = 0; i < m_bulletsPerShot; i++)
     {
         bullets.emplace_back(m_damage, position, glm::rotate(direction, randomRotate(RNG)), m_bulletSpeed);

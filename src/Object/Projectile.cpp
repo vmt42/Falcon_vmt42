@@ -6,7 +6,7 @@ namespace Falcon
 {
     void Projectile::draw(Falcon::SpriteBatch &spriteBatch)
     {
-        static Falcon::GLTexture texture = Falcon::ResourceManager::getTexture("images/Textures/Enemy_Mushroom1.png");
+        static Falcon::GLTexture texture = Falcon::ResourceManager::getTexture("media/Textures/Enemy_Mushroom1.png");
         glm::vec4 uv(0.0f, 0.0f, 1.0f, 1.0f);
         Falcon::Color color;
         color.r = 255;

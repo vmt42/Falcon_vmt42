@@ -19,12 +19,18 @@ public:
     ~Player() {};
 
     void draw(Falcon::SpriteBatch& spriteBatch) override;
-    void update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies, float deltaTime) override;
+    void update(const std::vector<std::string> &level, std::vector<Human*>& humans,
+                std::vector<Enemy*>& enemies, float deltaTime) override;
 
     void addRangeWeapon(RangeWeapon* rangeWeapon);
     void addMeleeWeapon(MeleeWeapon* meleeWeapon);
 
+    void addPoints(int points) { m_points += points; };
+    int getPoints() { return m_points; };
+
+
 private:
+    int m_points;
     Falcon::InputManager* m_inputManager;
     Falcon::Camera2D* m_camera;
     std::vector<RangeWeapon*> m_rangeWeapons;

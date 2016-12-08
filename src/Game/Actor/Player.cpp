@@ -6,7 +6,7 @@
 
 Player::Player(glm::vec2 position, float speed, Falcon::InputManager *inputManager, Falcon::Camera2D *camera,
                std::vector<Bullet> *bullets, std::vector<Slash> *slash)
-        : m_currentGun(-1)
+        : m_currentGun(-1), m_points(0)
 {
     m_speed = speed;
     m_position = position;
@@ -80,8 +80,8 @@ void Player::update(const std::vector<std::string> &level, std::vector<Human*>& 
 
 void Player::draw(Falcon::SpriteBatch &spriteBatch)
 {
-    static GLuint shadowID = Falcon::ResourceManager::getTexture("images/Textures/shadow.png").id;
-    static GLuint textureID = Falcon::ResourceManager::getTexture("images/Textures/player.png").id;
+    static GLuint shadowID = Falcon::ResourceManager::getTexture("media/Textures/shadow.png").id;
+    static GLuint textureID = Falcon::ResourceManager::getTexture("media/Textures/player.png").id;
     glm::vec4 uvVec(0.0f, 0.0f, 1.0f, 1.0f);
 
     glm::vec4 posVecShadow(m_position.x, m_position.y - 10, TILE_WIDTH, TILE_WIDTH);

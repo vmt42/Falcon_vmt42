@@ -14,7 +14,7 @@ bool Bullet::update(const std::vector<std::string> &level, float deltaTime)
 
 void Bullet::draw(Falcon::SpriteBatch &spriteBatch)
 {
-    static GLuint textureID = Falcon::ResourceManager::getTexture("images/Textures/arrow.png").id;
+    static GLuint textureID = Falcon::ResourceManager::getTexture("media/Textures/arrow.png").id;
     glm::vec4 uvVec(0.0f, 0.0f, 1.0f, 1.0f);
 
     glm::vec4 posVec(m_position.x, m_position.y, BULLET_RADIUS, BULLET_RADIUS);

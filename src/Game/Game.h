@@ -15,6 +15,8 @@
 #include "../Timing/Timing.h"
 #include "../Object/Projectile.h"
 #include "../Game/Level/Level.h"
+#include "../2D/SpriteFont/SpriteFont.h"
+#include "../Audio/AudioEngine.h"
 #include "Actor/Player.h"
 #include "Actor/Enemy.h"
 #include "Weapon/Bullet.h"
@@ -36,6 +38,7 @@ private:
     void processInput();
     void gameLoop();
     void draw();
+    void drawHUD();
     void updateActors(float deltaTime);
     void updateBullets(float deltaTime);
 
@@ -48,10 +51,14 @@ private:
     Falcon::StateType m_currentState;
     Falcon::ShaderProgram m_shaderProgram;
     Falcon::Camera2D m_camera;
+    Falcon::Camera2D m_hudCamera;
     Falcon::SpriteBatch m_actorSpriteBatch;
     Falcon::SpriteBatch m_decalsSpriteBatch;
+    Falcon::SpriteBatch m_uiSpriteBatch;
     Falcon::InputManager m_inputManager;
     Falcon::FPSLimiter m_FPSLimiter;
+    Falcon::SpriteFont* m_spriteFont;
+    Falcon::AudioEngine m_audioEngine;
 
     std::vector<Level*> m_levels;
     std::vector<Human*> m_humans;

@@ -9,7 +9,7 @@
 class Blood
 {
 public:
-    Blood(glm::vec2 position) : m_position(position) { m_textureID = Falcon::ResourceManager::getTexture("images/Textures/blood_splat1.png").id;};
+    Blood(glm::vec2 position) : m_position(position) { m_textureID = Falcon::ResourceManager::getTexture("media/Textures/blood_splat1.png").id;};
     void draw(Falcon::SpriteBatch& spriteBatch);
 private:
     glm::vec2 m_position;

@@ -41,37 +41,39 @@ void Level::init()
             char tile = m_level[i][j];
 
             glm::vec4 posVec(j * TILE_HEIGHT, i * TILE_WIDTH, TILE_WIDTH, TILE_HEIGHT);
+
+            //TODO: NORMAL LEVEL SERIALIZER
             switch (tile)
             {
                 case '.':
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/floor_tile.png").id,
+                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("media/Textures/floor_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 case 'W':
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/wall_tile.png").id,
+                    m_spriteBatch.draw(posVec , uvVec, Falcon::ResourceManager::getTexture("media/Textures/wall_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 case 'C':
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/ceiling_tile.png").id,
+                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("media/Textures/ceiling_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 case '@': //A player position
                     m_level[i][j] = '.';
                     m_playerStartPos.x = j * TILE_HEIGHT;
                     m_playerStartPos.y = i * TILE_WIDTH;
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/floor_tile.png").id,
+                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("media/Textures/floor_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 case '%': //A human position
                     m_level[i][j] = '.';
                     m_humanStartPos.emplace_back(j * TILE_HEIGHT, i * TILE_WIDTH);
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/floor_tile.png").id,
+                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("media/Textures/floor_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 case '&': //An enemy position
                     m_level[i][j] = '.';
                     m_enemyStartPos.emplace_back(j * TILE_HEIGHT, i * TILE_WIDTH);
-                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("images/Textures/floor_tile.png").id,
+                    m_spriteBatch.draw(posVec, uvVec, Falcon::ResourceManager::getTexture("media/Textures/floor_tile.png").id,
                                        0.0f, Falcon::Color{255, 255, 255, 255});
                     break;
                 default:

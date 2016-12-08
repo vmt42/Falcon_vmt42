@@ -46,8 +46,8 @@ void Human::update(const std::vector<std::string> &level, std::vector<Human*>& h
 
 void Human::draw(Falcon::SpriteBatch &spriteBatch)
 {
-    static GLuint shadowID = Falcon::ResourceManager::getTexture("images/Textures/shadow.png").id;
-    static GLuint textureID = Falcon::ResourceManager::getTexture("images/Textures/human.png").id;
+    static GLuint shadowID = Falcon::ResourceManager::getTexture("media/Textures/shadow.png").id;
+    static GLuint textureID = Falcon::ResourceManager::getTexture("media/Textures/human.png").id;
     glm::vec4 uvVec(0.0f, 0.0f, 1.0f, 1.0f);
 
     glm::vec4 posVecShadow(m_position.x, m_position.y - 10, TILE_WIDTH, TILE_WIDTH);
