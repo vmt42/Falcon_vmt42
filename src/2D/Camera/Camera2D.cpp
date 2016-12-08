@@ -53,8 +53,8 @@ namespace Falcon
         //Vector from input to the camera
         glm::vec2 distVec = centerPos - centerCameraPos ;
 
-        float x_depth = MIN_DISTANCE_X - abs(distVec.x);
-        float y_depth = MIN_DISTANCE_Y - abs(distVec.y);
+        float x_depth = MIN_DISTANCE_X - std::abs(distVec.x);
+        float y_depth = MIN_DISTANCE_Y - std::abs(distVec.y);
 
 
         if (x_depth > 0 && y_depth > 0)
