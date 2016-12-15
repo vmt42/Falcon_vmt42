@@ -18,7 +18,7 @@ void Bullet::draw(Falcon::SpriteBatch &spriteBatch)
     glm::vec4 uvVec(0.0f, 0.0f, 1.0f, 1.0f);
 
     glm::vec4 posVec(m_position.x, m_position.y, BULLET_RADIUS, BULLET_RADIUS);
-    spriteBatch.draw(posVec, uvVec, textureID, 0, Falcon::Color{255, 255, 255, 255});
+    spriteBatch.draw(posVec, uvVec, textureID, 0, Falcon::Color{255, 255, 255, 255}, m_direction);
 }
 
 bool Bullet::actorCollision(Actor *actor)

@@ -34,6 +34,7 @@ protected:
 protected:
     float m_speed;
     glm::vec2 m_position;
+    glm::vec2 m_direction;
     float m_health;
     Falcon::Color m_color;
 };

@@ -6,6 +6,7 @@
 #include "../ResourceManager/ResourceManager.h"
 #include "Weapon/RangeWeapon.h"
 #include "Weapon/MeleeWeapon.h"
+#include "glm/gtx/rotate_vector.hpp"
 
 Game::~Game()
 {
@@ -51,10 +52,20 @@ void Game::initSystems()
     m_hudCamera.setPosition(glm::vec2(m_screenWidth / 2, m_screenHeight / 2));
     m_actorSpriteBatch.init();
     m_decalsSpriteBatch.init();
-    m_FPSLimiter.init(9999999999.0f);
+    m_FPSLimiter.init(60.0f);
     m_uiSpriteBatch.init();
     m_spriteFont = new Falcon::SpriteFont("media/Fonts/pixel_font.ttf", 12);
+    m_bloodEffects = new Falcon::ParticleBatch();
+    m_bloodEffects->init(1000, 0.09f,
+                         Falcon::ResourceManager::getTexture("media/Textures/blood_splat1.png"),
+                         [](Falcon::Particle& particle, float deltaTime)
+                         {
+                             particle.position += particle.velocity * deltaTime;
+                             particle.color.a = (GLubyte)(particle.life * 255.0f);
+                         });
+    m_particleSystem.addParticleBatch(m_bloodEffects);
 }
+
 
 void Game::initLevel()
 {
@@ -164,6 +175,7 @@ void Game::gameLoop()
             float deltaTime = std::min(totalDeltaTime, MAX_DELTA_TIME);
             updateActors(deltaTime);
             updateBullets(deltaTime);
+            m_particleSystem.update(deltaTime);
             totalDeltaTime -= deltaTime;
             i++;
         }
@@ -239,8 +251,7 @@ void Game::updateBullets(float deltaTime)
         {
             if (m_slashes[i].actorCollision(m_enemies[j]))
             {
-
-                m_bloodDecals.emplace_back(m_enemies[j]->getPosition());
+                addBlood(m_enemies[j]->getPosition(), 5);
                 if (m_enemies[j]->addDamage(m_slashes[i].getDamage()))
                 {
                     delete m_enemies[j];
@@ -294,8 +305,8 @@ void Game::updateBullets(float deltaTime)
             // Check collision
             if (m_bullets[i].actorCollision(m_enemies[j]))
             {
-                // Add blood decal
-                m_bloodDecals.emplace_back(m_enemies[j]->getPosition());
+                // Add blood particles
+                addBlood(m_enemies[j]->getPosition(), 5);
                 // Returns true, when enemy is dead
                 if (m_enemies[j]->addDamage(m_bullets[i].getDamage()))
                 {
@@ -381,10 +392,17 @@ void Game::draw()
         slash.draw(m_actorSpriteBatch);
     }
 
+
     m_actorSpriteBatch.end();
     m_actorSpriteBatch.renderBatch();
 
+    m_decalsSpriteBatch.begin();
+    m_particleSystem.draw(&m_actorSpriteBatch);
+    m_decalsSpriteBatch.end();
+    m_decalsSpriteBatch.renderBatch();
+
     drawHUD();
+
     m_shaderProgram.use();
     m_window.swapBuffer(); // Swap buffer
 
@@ -407,6 +425,18 @@ void Game::drawHUD()
 
     m_uiSpriteBatch.end();
     m_uiSpriteBatch.renderBatch();
+}
+
+void Game::addBlood(const glm::vec2 &position, int numParticles)
+{
+    static std::mt19937 RNG(time(nullptr));
+    static std::uniform_real_distribution<float> randAngle(0.0f, 2 * M_PI);
+    glm::vec2 vel(3.0f, 0.0f);
+
+    for (int i = 0; i < numParticles; i++)
+    {
+        m_bloodEffects->addParticle(position, glm::rotate(vel, randAngle(RNG)), Falcon::Color(255, 255, 255, 255), 30);
+    }
 }
 
 

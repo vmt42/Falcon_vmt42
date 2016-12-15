@@ -7,7 +7,7 @@ Enemy::Enemy(glm::vec2 position, float speed)
 {
     m_speed = speed;
     m_position = position;
-    m_health = 100.0f;
+    m_health = 25.0f;
     m_color = Falcon::Color(255, 255, 255, 255);
 }
 
@@ -30,8 +30,8 @@ void Enemy::update(const std::vector<std::string> &level, std::vector<Human*>& h
 
     if (closestHuman != nullptr)
     {
-        glm::vec2 direction = glm::normalize(closestHuman->getPosition() - m_position);
-        m_position += direction * m_speed * deltaTime;;
+        m_direction = glm::normalize(closestHuman->getPosition() - m_position);
+        m_position += m_direction * m_speed * deltaTime;;
     }
 
     levelCollision(level);

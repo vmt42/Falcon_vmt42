@@ -1,12 +1,32 @@
 #include <GL/glew.h>
 #include "SpriteBatch.h"
 #include <algorithm>
+#include <iostream>
+
 namespace Falcon
 {
 
     void SpriteBatch::draw(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint texture, float depth, const Color &color)
     {
         m_glyphs.emplace_back(destRect, uvRect, texture, depth, color);
+    }
+
+    void SpriteBatch::draw(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint texture, float depth,
+                           const Color &color, float angle)
+    {
+        m_glyphs.emplace_back(destRect, uvRect, texture, depth, color, angle);
+    }
+
+    void SpriteBatch::draw(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint texture, float depth,
+                           const Color &color, const glm::vec2 dir)
+    {
+        const glm::vec2 right(1.0f, 0.0f);
+        float angle = acos(glm::dot(right, dir));
+
+        if (dir.y < 0.0f) angle = -angle;
+
+
+        m_glyphs.emplace_back(destRect, uvRect, texture, depth, color, angle);
     }
 
     void SpriteBatch::init()
@@ -151,4 +171,68 @@ namespace Falcon
     }
 
 
+    Glyph::Glyph(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint Texture, float Depth, const Color &color)
+            : texture(Texture), depth(Depth)
+    {
+        topLeft.color = color;
+        topLeft.setPosition(destRect.x, destRect.y + destRect.w);
+        topLeft.setUV(uvRect.x, uvRect.y + uvRect.w);
+
+        bottomLeft.color = color;
+        bottomLeft.setPosition(destRect.x, destRect.y);
+        bottomLeft.setUV(uvRect.x, uvRect.y);
+
+        bottomRight.color = color;
+        bottomRight.setPosition(destRect.x + destRect.z , destRect.y);
+        bottomRight.setUV(uvRect.x + uvRect.z, uvRect.y);
+
+        topRight.color = color;
+        topRight.setPosition(destRect.x + destRect.z, destRect.y + destRect.w);
+        topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
+    }
+
+    Glyph::Glyph(const glm::vec4 &destRect, const glm::vec4 &uvRect, GLuint Texture, float Depth, const Color &color,
+                 float angle)
+            : texture(Texture), depth(Depth)
+    {
+        glm::vec2 halfDims(destRect.z / 2.0f, destRect.w / 2.0f);
+
+        //Get points set at the origin
+        glm::vec2 tl(-halfDims.x, halfDims.y);
+        glm::vec2 bl(-halfDims.x, -halfDims.y);
+        glm::vec2 br(halfDims.x, -halfDims.y);
+        glm::vec2 tr(halfDims.x, halfDims.y);
+
+        //Rotate the points
+        tl = rotatePoint(tl, angle) + halfDims;
+        bl = rotatePoint(bl, angle) + halfDims;
+        br = rotatePoint(br, angle) + halfDims;
+        tr = rotatePoint(tr, angle) + halfDims;
+
+        topLeft.color = color;
+        topLeft.setPosition(destRect.x + tl.x, destRect.y + destRect.w + tl.y);
+        topLeft.setUV(uvRect.x, uvRect.y + uvRect.w);
+
+        bottomLeft.color = color;
+        bottomLeft.setPosition(destRect.x + bl.x, destRect.y + bl.y);
+        bottomLeft.setUV(uvRect.x, uvRect.y);
+
+        bottomRight.color = color;
+        bottomRight.setPosition(destRect.x + destRect.z + br.x, destRect.y + br.y);
+        bottomRight.setUV(uvRect.x + uvRect.z, uvRect.y);
+
+        topRight.color = color;
+        topRight.setPosition(destRect.x + destRect.z + tr.x, destRect.y + destRect.w + tr.y);
+        topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
+    }
+
+    glm::vec2 Glyph::rotatePoint(glm::vec2 position, float angle)
+    {
+        glm::vec2 newVec;
+
+        newVec.x = (float) (position.x * cos(angle) - position.y * sin(angle));
+        newVec.y = (float) (position.x * sin(angle) + position.y * cos(angle));
+
+        return newVec;
+    }
 }

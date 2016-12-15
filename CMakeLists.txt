@@ -74,7 +74,7 @@ set(SOURCE_FILES
     src/Game/Weapon/Slash.cpp
     src/Game/Weapon/Slash.h
     src/Game/Decals/Blood.cpp
-    src/Game/Decals/Blood.h src/2D/SpriteFont/SpriteFont.cpp src/2D/SpriteFont/SpriteFont.h src/Audio/AudioEngine.cpp src/Audio/AudioEngine.h)
+    src/Game/Decals/Blood.h src/2D/SpriteFont/SpriteFont.cpp src/2D/SpriteFont/SpriteFont.h src/Audio/AudioEngine.cpp src/Audio/AudioEngine.h src/2D/Particles/ParticleSystem.cpp src/2D/Particles/ParticleSystem.h src/2D/Particles/ParticleBatch.cpp src/2D/Particles/ParticleBatch.h)
 
 add_executable(FalconLatinum ${SOURCE_FILES})
 target_link_libraries(FalconLatinum ${SDL2_LIBRARY} ${OPENGL_LIBRARIES} ${GLEW_LIBRARIES}

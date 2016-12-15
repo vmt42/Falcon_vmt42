@@ -21,6 +21,8 @@
 #include "Actor/Enemy.h"
 #include "Weapon/Bullet.h"
 #include "Decals/Blood.h"
+#include "../2D/Particles/ParticleSystem.h"
+#include "../2D/Particles/ParticleBatch.h"
 
 
 class Game
@@ -41,6 +43,7 @@ private:
     void drawHUD();
     void updateActors(float deltaTime);
     void updateBullets(float deltaTime);
+    void addBlood(const glm::vec2& position, int numParticles);
 
 private:
     int m_screenWidth;
@@ -59,6 +62,8 @@ private:
     Falcon::FPSLimiter m_FPSLimiter;
     Falcon::SpriteFont* m_spriteFont;
     Falcon::AudioEngine m_audioEngine;
+    Falcon::ParticleSystem m_particleSystem;
+    Falcon::ParticleBatch* m_bloodEffects;
 
     std::vector<Level*> m_levels;
     std::vector<Human*> m_humans;

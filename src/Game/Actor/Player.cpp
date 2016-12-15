@@ -3,6 +3,8 @@
 #include "../Weapon/RangeWeapon.h"
 #include "../Weapon/MeleeWeapon.h"
 #include "../Level/Level.h"
+#include <glm/gtx/rotate_vector.hpp>
+#include <iostream>
 
 Player::Player(glm::vec2 position, float speed, Falcon::InputManager *inputManager, Falcon::Camera2D *camera,
                std::vector<Bullet> *bullets, std::vector<Slash> *slash)
@@ -18,7 +20,7 @@ Player::Player(glm::vec2 position, float speed, Falcon::InputManager *inputManag
 
 void Player::update(const std::vector<std::string> &level, std::vector<Human*>& humans, std::vector<Enemy*>& enemies, float deltaTime)
 {
-    //glm::vec2 centerPlayerPos = m_position + glm::vec2(8);
+    //glm::vec2 centerPlayerPos = position + glm::vec2(8);
     if (m_inputManager->isKeyPressed(SDLK_w))
     {
         m_position.y += m_speed * deltaTime;
@@ -60,16 +62,15 @@ void Player::update(const std::vector<std::string> &level, std::vector<Human*>& 
         mouse = m_camera->screenToWorld(mouse);
 
         glm::vec2 centerPosition = m_position + glm::vec2(ACTOR_RADIUS);
-        glm::vec2 direction = glm::normalize(mouse - centerPosition);
+        m_direction = glm::normalize(mouse - centerPosition);
 
         if (m_currentGun == 3)
         {
-            m_meleeWeapon->update(m_inputManager->isKeyPressed(SDL_BUTTON_LEFT), centerPosition - glm::vec2(0, 32), direction,
-                                  *m_slashes, deltaTime, 100 * 3.14159265359f / 180);
+            m_meleeWeapon->update(m_inputManager->isKeyPressed(SDL_BUTTON_LEFT), centerPosition, m_direction, *m_slashes, deltaTime);
         }
         else
         {
-            m_rangeWeapons[m_currentGun]->update(m_inputManager->isKeyPressed(SDL_BUTTON_LEFT), centerPosition, direction, *m_bullets, deltaTime);
+            m_rangeWeapons[m_currentGun]->update(m_inputManager->isKeyPressed(SDL_BUTTON_LEFT), centerPosition, m_direction, *m_bullets, deltaTime);
         }
 
     }
