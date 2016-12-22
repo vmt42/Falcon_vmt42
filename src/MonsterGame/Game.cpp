@@ -52,7 +52,7 @@ void Game::initSystems()
     m_hudCamera.setPosition(glm::vec2(m_screenWidth / 2, m_screenHeight / 2));
     m_actorSpriteBatch.init();
     m_decalsSpriteBatch.init();
-    m_FPSLimiter.init(60.0f);
+    m_FPSLimiter.init(999.0f);
     m_uiSpriteBatch.init();
     m_spriteFont = new Falcon::SpriteFont("media/Fonts/pixel_font.ttf", 12);
     m_bloodEffects = new Falcon::ParticleBatch();
