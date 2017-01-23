@@ -2,14 +2,18 @@
 #include "Vertex.h"
 #include "../ResourceManager/ResourceManager.h"
 #include <cstddef>
-namespace Falcon {
-    Sprite::~Sprite() {
-        if (m_vboID != 0) {
+namespace Falcon
+{
+    Sprite::~Sprite()
+    {
+        if (m_vboID != 0)
+        {
             glDeleteBuffers(1, &m_vboID);
         }
     }
 
-    void Sprite::init(float x, float y, float width, float height, std::string texturePath) {
+    void Sprite::init(float x, float y, float width, float height, std::string texturePath)
+    {
         m_x = x;
         m_y = y;
         m_width = width;
@@ -17,7 +21,8 @@ namespace Falcon {
 
         m_texture = ResourceManager::getTexture(texturePath);
 
-        if (m_vboID == 0) {
+        if (m_vboID == 0)
+        {
             glGenBuffers(1, &m_vboID); //Generate buffer
         }
 
@@ -43,7 +48,8 @@ namespace Falcon {
         vertexData[5].setPosition(x + width, y + height);
         vertexData[5].setUV(1.0f, 1.0f);
 
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++)
+        {
             vertexData[i].color.r = 255;
             vertexData[i].color.g = 0;
             vertexData[i].color.b = 255;
@@ -59,7 +65,8 @@ namespace Falcon {
         glBindBuffer(GL_ARRAY_BUFFER, 0); // Unbind buffer
     }
 
-    void Sprite::draw() {
+    void Sprite::draw()
+    {
         glBindTexture(GL_TEXTURE_2D, m_texture.id); // Bind texture
         glBindBuffer(GL_ARRAY_BUFFER, m_vboID); // Bind buffer
 

@@ -15,6 +15,8 @@ namespace Falcon
 
         void compileShaders(const std::string &vertShaderPath, const std::string &fragShaderPath);
 
+        void compileShadersFromSource(const char* vertexSource, const char* fragmentSource);
+
         void linkShaders();
 
         void addAttribute(const std::string &attributeName);
@@ -25,8 +27,10 @@ namespace Falcon
 
         GLint getUniformLocation(const std::string &uniformName);
 
+        void dispose();
+
     private:
-        void compileShader(const std::string &shaderPath, GLuint id);
+        void compileShader(const char* source, const std::string& name, GLuint id);
 
     private:
         GLuint m_numAttributes;

@@ -6,8 +6,10 @@
 #include "GLTexture.h"
 
 #include <string>
-namespace Falcon {
-    class Sprite {
+namespace Falcon
+{
+    class Sprite
+    {
     public:
         Sprite() : m_vboID(0) {};
 

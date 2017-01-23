@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <iostream>
 
+
 namespace Falcon
 {
 
@@ -196,6 +197,7 @@ namespace Falcon
             : texture(Texture), depth(Depth)
     {
         glm::vec2 halfDims(destRect.z / 2.0f, destRect.w / 2.0f);
+
         glm::vec2 tl(-halfDims.x, halfDims.y);
         glm::vec2 bl(-halfDims.x, -halfDims.y);
         glm::vec2 br(halfDims.x, -halfDims.y);
@@ -206,10 +208,10 @@ namespace Falcon
         br = rotatePoint(br, angle) + halfDims;
         tr = rotatePoint(tr, angle) + halfDims;
 
-        topLeft.color=color;
-        topRight.color=color;
-        bottomLeft.color=color;
-        bottomRight.color=color;
+        topLeft.color = color;
+        topRight.color = color;
+        bottomLeft.color = color;
+        bottomRight.color = color;
 
         topLeft.setPosition(destRect.x + tl.x, destRect.y + tl.y);
         topRight.setPosition(destRect.x + tr.x, destRect.y + tr.y);

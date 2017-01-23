@@ -28,7 +28,7 @@ void Game::initSystems()
 
 void Game::initShaders()
 {
-    m_shaderProgram.compileShaders("src/Shaders/colorShading.vert", "src/Shaders/colorShading.frag");
+    m_shaderProgram.compileShaders("src/Shaders/textureShading.vert", "src/Shaders/textureShading.frag");
     m_shaderProgram.addAttribute("vertexPosition");
     m_shaderProgram.addAttribute("vertexColor");
     m_shaderProgram.addAttribute("vertexUV");

@@ -1,9 +1,13 @@
 #include "Window.h"
 #include "../Errors/Errors.h"
-namespace Falcon {
-    int Window::create(std::string windowName, int screenWidth, int screenHeight, unsigned int currentFlags) {
+namespace Falcon
+{
+    int Window::create(std::string windowName, int screenWidth, int screenHeight, unsigned int currentFlags)
+    {
 
         Uint32 flags = SDL_WINDOW_OPENGL;
+        m_screenHeight = screenHeight;
+        m_screenWidth = screenWidth;
 
         if (currentFlags & INVISIBLE) {
             flags |= SDL_WINDOW_HIDDEN;

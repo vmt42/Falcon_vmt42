@@ -21,6 +21,8 @@ namespace Falcon {
 
         int getScreenHeight() { return m_screenHeight; };
 
+        SDL_Window * getSDLWindow() { return m_sdlWindow; };
+
         void swapBuffer();
 
 
