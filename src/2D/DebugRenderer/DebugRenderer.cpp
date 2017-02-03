@@ -136,7 +136,7 @@ namespace Falcon
 
     void DebugRenderer::drawCircle(const glm::vec2 &center, const Color &color, float radius)
     {
-        static const int NUM_VERTS = 100;
+        static const int NUM_VERTS = 30;
 
         // Set up vertices
         int start = m_verts.size();

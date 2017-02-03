@@ -21,19 +21,41 @@ namespace Falcon
     {
         if(!init())
             return;
+        const int MAX_LOGIC_STEPS = 6;
+        const float TARGETED_FPS = 60.0f;
+        const float MS_PER_SECOND = 1000.0f;
+        const float DESIRED_FRAMETIME = MS_PER_SECOND / TARGETED_FPS;
+        const float MAX_DELTA_TIME = 1.0f;
+
+        float prevTicks = SDL_GetTicks();
 
         FPSLimiter limiter;
-        limiter.setTargetFPS(60.0f);
+        limiter.setTargetFPS(999.0f);
         m_isRunning = true;
         while (m_isRunning)
         {
             limiter.begin();
+            float newTicks = SDL_GetTicks();
+            float frameTime = newTicks - prevTicks;
+            prevTicks = newTicks;
+            float totalDeltaTime = frameTime / DESIRED_FRAMETIME;
 
             inputManager.update();
-            update();
+
+
             if (m_isRunning)
             {
-                draw();
+                int i = 0;
+                while (totalDeltaTime > 0.0f && i < MAX_LOGIC_STEPS)
+                {
+                    float deltaTime = std::min(totalDeltaTime, MAX_DELTA_TIME);
+
+                    update(deltaTime);
+                    draw(deltaTime);
+                    totalDeltaTime -= deltaTime;
+                    i++;
+                }
+
 
                 m_FPS = limiter.end();
                 m_window.swapBuffer();
@@ -72,20 +94,20 @@ namespace Falcon
 
     bool IMainGame::initSystems()
     {
-        m_window.create("Default", 1280, 720, 0);
+        m_window.create("Application", 1280, 720, 0);
         glewExperimental = GL_TRUE;
         glewInit();
         return true;
     }
 
-    void IMainGame::update()
+    void IMainGame::update(float deltaTime)
     {
         if(m_currentScreen)
         {
             switch (m_currentScreen->getState())
             {
                 case ScreenState::RUNNING:
-                    m_currentScreen->update();
+                    m_currentScreen->update(deltaTime);
                     break;
                 case ScreenState::CHANGE_NEXT:
                     m_currentScreen->onExit();
@@ -118,12 +140,12 @@ namespace Falcon
         }
     }
 
-    void IMainGame::draw()
+    void IMainGame::draw(float deltaTime)
     {
         glViewport(0, 0, m_window.getScreenWidth(), m_window.getScreenHeight());
         if(m_currentScreen && m_currentScreen->getState() == ScreenState::RUNNING)
         {
-            m_currentScreen->draw();
+            m_currentScreen->draw(deltaTime);
         }
     }
 
