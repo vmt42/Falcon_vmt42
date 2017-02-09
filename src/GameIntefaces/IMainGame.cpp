@@ -40,7 +40,7 @@ namespace Falcon
             prevTicks = newTicks;
             float totalDeltaTime = frameTime / DESIRED_FRAMETIME;
 
-            inputManager.update();
+            InputManager::instance().update();
 
 
             if (m_isRunning)
@@ -114,8 +114,8 @@ namespace Falcon
                     m_currentScreen = m_screenList->moveNext();
                     if (m_currentScreen)
                     {
-                        m_currentScreen->setRunning();
                         m_currentScreen->onEntry();
+                        m_currentScreen->setRunning();
                     }
                     break;
                 case ScreenState::CHANGE_PREV:
@@ -123,8 +123,8 @@ namespace Falcon
                     m_currentScreen = m_screenList->movePrev();
                     if (m_currentScreen)
                     {
-                        m_currentScreen->setRunning();
                         m_currentScreen->onEntry();
+                        m_currentScreen->setRunning();
                     }
                     break;
                 case ScreenState::EXIT_APP:
@@ -157,19 +157,19 @@ namespace Falcon
                 exitGame();
                 break;
             case SDL_MOUSEMOTION:
-                inputManager.setMouseCoords((float)event.motion.x, (float)event.motion.y);
+                InputManager::instance().setMouseCoords((float)event.motion.x, (float)event.motion.y);
                 break;
             case SDL_KEYDOWN:
-                inputManager.pressKey(event.key.keysym.sym);
+                InputManager::instance().pressKey(event.key.keysym.sym);
                 break;
             case SDL_KEYUP:
-                inputManager.releaseKey(event.key.keysym.sym);
+                InputManager::instance().releaseKey(event.key.keysym.sym);
                 break;
             case SDL_MOUSEBUTTONDOWN:
-                inputManager.pressKey(event.button.button);
+                InputManager::instance().pressKey(event.button.button);
                 break;
             case SDL_MOUSEBUTTONUP:
-                inputManager.releaseKey(event.button.button);
+                InputManager::instance().releaseKey(event.button.button);
                 break;
         }
     }
