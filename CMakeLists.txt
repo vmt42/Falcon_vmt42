@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(FalconLatinum)
 
+set(OpenGL_GL_PREFERENCE LEGACY)
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${FalconLatinum_SOURCE_DIR}/cmake")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 INCLUDE(FindSDL2 REQUIRED)
