@@ -1,6 +1,7 @@
 #ifndef FALCONLATINUM_TEXTURECACHE_H
 #define FALCONLATINUM_TEXTURECACHE_H
 
+#include <string>
 #include <map>
 #include "../2D/GLTexture.h"
 namespace Falcon {
